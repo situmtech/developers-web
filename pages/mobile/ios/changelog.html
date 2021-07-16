@@ -1,0 +1,3163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="../../../images/favicon.ico" rel="icon" type="image/ico" />
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Situm Developers | IOS SDK | Changelog</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta name="author" content="SITUM TECHNOLOGIES S.L."/>
+<meta name="description" content="Record of all changes made in the Situm IOS SDK"/>
+
+<meta property="og:title" content="Situm Developers | IOS SDK | Changelog" />
+<meta property="og:url" content="https://developers.situm.es/" />
+<meta property="og:image" content="https://developers.situm.es/images/facebook_img.jpg" />
+<meta property="og:description" content="Record of all changes made in the Situm IOS SDK" />
+<meta property="og:site_name" content="Situm Developers" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@situm_es">
+<meta name="twitter:title" content="Situm Developers | IOS SDK | Changelog">
+<meta name="twitter:description" content="Record of all changes made in the Situm IOS SDK">
+<meta name="twitter:image" content="https://developers.situm.es/images/facebook_img.jpg">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="../../../stylesheets/highlighting.css" rel="stylesheet" />
+    <link href="../../../stylesheets/site.css" rel="stylesheet" />
+    <script src="../../../javascripts/all.js"></script>
+          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NVZFFWX');</script>
+
+
+  </head>
+
+  <body class="pages pages_mobile pages_mobile_ios pages_mobile_ios_changelog">
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVZFFWX"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<header class="header-wrapper--pc">
+  <div class="header-navigation">
+    <div class="header-navigation__nav-logo">
+<a href="../../../">        <img src="../../../images/common/logo-situm.svg" alt="Logo situm" />
+</a>    </div>
+    <div class="header-navigation__nav-links">
+        <a href="https://situm.com/en/" class="navigation-link " target="_blank">Situm.com</a>
+        <a href="../../../" class="navigation-link ">Home</a>
+        <a href="../" class="navigation-link ">Mobile SDKs</a>
+        <a href="../../wayfinding/" class="navigation-link ">Wayfinding Module</a>
+        <a href="../../rest/" class="navigation-link ">Situm REST API</a>
+        <a href="../../terminology/" class="navigation-link ">Terminology</a>
+        <a href="https://situm.es/en/faq" class="navigation-link " target="_blank">Support</a>
+    </div>
+    <div class="clear"></div>
+  </div>
+</header>
+
+<header class="header-wrapper--mobile">
+  <div class="header-navigation">
+
+    <label class="navbar-label" for="open-navbar">
+      <div class="header-navigation__nav-toggle">
+        <div class="icon-wrapper--mobile">
+          <span class="nav-hamburger">
+  <span class="nav-hamburger__line"></span>
+  <span class="nav-hamburger__line"></span>
+  <span class="nav-hamburger__line"></span>
+</span>
+
+        </div>
+      </div>
+    </label>
+
+    <div class="header-navigation__nav-logo">
+<a href="../../../">        <img src="../../../images/common/logo-situm.svg" alt="Logo situm" />
+</a>    </div>
+    <div class="clear"></div>
+  </div>
+</header>
+
+    <div class="android-sdk-wrapper">
+      <div class="sidebar__header">
+  <div class="hamburger-wrapper">
+    <label for="open-sidebar">
+      <span class="nav-hamburger">
+  <span class="nav-hamburger__line"></span>
+  <span class="nav-hamburger__line"></span>
+  <span class="nav-hamburger__line"></span>
+</span>
+
+    </label>
+  </div>
+  <div class="sidebar__header--title">
+    <div class="icon"></div>
+    <span>
+      Developers
+    </span>
+  </div>
+</div>
+<input type="checkbox" id="open-sidebar" class="check-sidebar">
+
+
+        <div id="wrapper" class="_wrapper">
+          <div id="sidebar-wrapper" class="_sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <li>
+        <a href="/pages/mobile/index.html" class="sidebar-nav__section ">Overview</a>
+        <a href="/pages/mobile/android/index.html" class="sidebar-nav__section ">Android</a>
+        <a href="/pages/mobile/ios/index.html" class="sidebar-nav__section active">iOS</a>
+        <a href="/pages/mobile/cordova/index.html" class="sidebar-nav__section ">Cordova</a>
+        <a href="/pages/mobile/reactnative/index.html" class="sidebar-nav__section ">React Native</a>
+    </li>
+  </ul>
+</div>
+
+
+          <div id="page-content-wrapper" class="_page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="documentation-content-wrapper">
+
+                      <div class="changelog-wrapper">
+
+  <h1>Changelog</h1>
+
+  <div class="changelog__list">
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.51.0
+         - July 07, 2021
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Changed:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Bluetooth Errors have been unified. In this version if a BLE problem is detected at any stage of positioning an error will be raised of domain <tt>SITLocationError</tt> and code <tt>kSITLocationErrorBluetoothIsOff</tt>  or <tt>kSITLocationErrorBluetoothUnauthorized</tt>. In the previous version two different errors were raised when BLE problems were detected: 1) If a BLE problem was detected while starting positioning an error of domain <tt>SITLocationError</tt> and code <tt>kSITLocationErrorBluetoothIsOff</tt> or <tt>kSITLocationErrorBluetoothUnauthorized</tt> was raised. 2)  If a BLE problem was detected while positioning indoor an error of domain SITIndoorLocationErrorDomain and code <tt>KSITIndoorLocationBluetoothNotAvailable</tt> or <tt>KSITIndoorLocationBluetoothOff</tt> was raised.</li>
+                  <li class="description__list-item">- Improved the accuracy of the position provided by the SDK. In previous versions the SDK’s position would lag behind the real position.</li>
+                  <li class="description__list-item">- Improved the speed at which Situm SDK returns a stable indoor position.</li>
+                  <li class="description__list-item">- Incorrect transitions between floors have now been reduced (even more).</li>
+                  <li class="description__list-item">- Previously, the ByCar Motion Mode could track the location of cars within parking lots. Now, it can also track cleaning machines and forklifts with an average accuracy of 1-10 meters aproximatelly.</li>
+              </ul>
+
+
+            <li class="description__list-item">Fixed:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed “[CoreBluetooth] XPC connection invalid” message that appeared sometimes in Xcode logs while debugging. </li>
+                  <li class="description__list-item">- Fixed bug in BLE error messages. In the previous version no error was raised when a BLE problem is detected in the building detection phase of Global Mode. This was fixed now and a critical error that stops positioning is raised. This error has domain <tt>SITLocationError</tt> and code <tt>kSITLocationErrorBluetoothIsOff</tt>  or <tt>kSITLocationErrorBluetoothUnauthorize</tt>. </li>
+                  <li class="description__list-item">- If positioning was started in a building with paths configured to help floor transitions and one/more of them were in uncalibrated floors, Situm SDK wasn’t able to return any geolocation.</li>
+                  <li class="description__list-item">- If positioning was started using the Uncalibrated Indoor GPS mode and the user was within one of the special geofences, in rare occassions Situm SDK provided the first locations (incorrectly) within the indoor area of the building instead of in the special fence where the user really was.</li>
+              </ul>
+
+
+            <li class="description__list-item">Decommissions:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- This will be the last version of the Situm SDK that supports pure Objective-C projects. The minor number of Situm SDK version will be increased in the next release. To avoid unintended migrations to next version, be sure to specify a version number in your Podfile. You can review how to specify pod versions numbers in your Podfile and how to freeze your project to a specific pod version <a href=https://guides.cocoapods.org/using/the-podfile.html?utm_source=adwords&utm_medium=ppc&utm_term=situm&utm_content=126569087452&utm_campaign=SEM_Marca_Latam_ESP_EX&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6hJkRF5USP9gGDKXTV1bT7N0oLisbB7YUfPp4_G2LYN9_hX5EuCpDgaAoNTEALw_wcB#specifying-pod-versions>here</a> . You can also review how semantic versioning works <a href=https://semver.org/?utm_source=adwords&utm_medium=ppc&utm_term=situm&utm_content=126569087452&utm_campaign=SEM_Marca_Latam_ESP_EX&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6hJkRF5USP9gGDKXTV1bT7N0oLisbB7YUfPp4_G2LYN9_hX5EuCpDgaAoNTEALw_wcB>here</a>. </li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.50.11
+         - June 14, 2021
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed a bug when <tt>SITCommunicationManager.prefetchPositioningInfo</tt> and <tt>SITLocationManager.requestLocationUpdates</tt> are called in a short period of time.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.50.10
+         - May 27, 2021
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed a bug in prefetch that made filtering by buildingIdentifiers not work properly.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.50.9
+         - May 12, 2021
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved image offline storage mecanism to take into account multiple errors.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.50.8
+         - April 08, 2021
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Updated protobuf version requirements.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.50.7
+         - April 05, 2021
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improvements in database management.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.50.6
+         - March 17, 2021
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed crash that occurred in some specific cases when retrieving geofences information.</li>
+                  <li class="description__list-item">- Improved prefetch performance.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.50.5
+         - February 16, 2021
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed issue on fetching profile</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.50.4
+         - January 12, 2021
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Optimized positioning performance.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.50.3
+         - January 05, 2021
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed bug in  <tt>SITFloor.altitude</tt></li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.50.2
+         - December 21, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added method to retrieve your organization settings</li>
+                  <li class="description__list-item">- Optimized storage usage. Now Situm uses less data storage while keeping the same functionality and quality.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.49.0
+         - December 14, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Included option to control the interval of computing outdoor locations.</li>
+                  <li class="description__list-item">- Included option to control the interval of updating outdoor locations.</li>
+                  <li class="description__list-item">- Included option to control the accuracy of background outdoor locations.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.48.1
+         - November 16, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improvements in positioning inside geofences. </li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.48.0
+         - November 12, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added option enableOutdoorPositions to control the usage of outdoor locations</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.47.1
+         - October 20, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- In iOS 14, return new SDK error if user doesnt provide a <tt>CLAccuracyAuthorization.fullAccuracy</tt> level of location accuracy</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.47.0
+         - October 05, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Add new option <tt>SITOutdoorLocationOptions.useGeofencesInBuildingSelector</tt> to use the geofences in global positioning. This will help the scans based detector select the building.</li>
+                  <li class="description__list-item">- Improvements in floor detection.</li>
+                  <li class="description__list-item">- Fix a bug in locations cache.</li>
+                  <li class="description__list-item">- Fix bug when executing in iOS 14 simulator.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.46.1
+         - August 24, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">-  Fix issue when connecting to different accounts</li>
+                  <li class="description__list-item">-  Fix a bug in sensors scanning in global location mode.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.46.0
+         - August 10, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">-  Implemented locations cache functionality. If activated it will smooth dispersion of initial positions on starts that occur shortly after stopping.</li>
+                  <li class="description__list-item">-  Tested compatibility with iOS 14</li>
+              </ul>
+
+
+            <li class="description__list-item"></li>
+
+
+              <blockquote>
+<p><tt>NOTICE</tt>: First version tested on iOS 14.</p>
+</blockquote>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.45.2
+         - July 09, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fix unexpected behaviour while fetching geofences from network.</li>
+              </ul>
+
+
+            <li class="description__list-item"></li>
+
+
+              <blockquote>
+<p><tt>WARNING</tt>: Last version compatible with 32bit architectures.</p>
+</blockquote>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.45.1
+         - June 19, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Include additional geofences information in new parameter of SITBuildingInfo.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.45.0
+         - June 15, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Add new parameter <tt>geofences</tt> to class <tt>SITBuildingInfo</tt>.</li>
+                  <li class="description__list-item">- Custom beacon filters set in <tt>SITLocationRequest</tt>, are now also used into the building detection phase and in indoor-outdoor transitions.</li>
+                  <li class="description__list-item">- Corrected bug in building transitions.</li>
+                  <li class="description__list-item">- Corrected bug in <tt>SITDirectionsManager</tt> when requesting a <tt>SITRoute</tt>.</li>
+                  <li class="description__list-item">- Corrected minor bug when fetchingFloors from <tt>SITCommunicationManager</tt>.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.44.0
+         - May 27, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Add new parameter <tt>minimumOutdoorLocationAccuracy</tt> to class <tt>SITOutdoorLocationOptions</tt>. This allows to configure a minimum accuracy required in order to use the locations received from GPS.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.43.0
+         - May 06, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Start global location by default if not <tt>buildingID</tt> is provided in <tt>SITBuildingRequest</tt>.</li>
+                  <li class="description__list-item">- Deprecated <tt>useGlobalLocation</tt> from <tt>SITBuildingRequest</tt>.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.42.4
+         - April 21, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fix bug in cache management.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.42.3
+         - April 13, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Provide real timestamps for outdoor locations even when GPS provider sends duplicated locations.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.42.2
+         - April 02, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improve APs cleanup procedure when updated info is obtained.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.42.1
+         - March 17, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fix a bug in positioning. Beacon UUIDs are now correctly retrieved from custom fields.</li>
+                  <li class="description__list-item">- Fix a bug in RT. Positions are now upload with the correct interval, after launching positioning with RT interval <tt>Never</tt>.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.42.0
+         - March 09, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added new interface to prefetch positioning info.</li>
+                  <li class="description__list-item">- Add new option <tt>preloadInfo</tt> in <tt>SITLocationRequest</tt>.</li>
+                  <li class="description__list-item">- Fix bug in clear cache.</li>
+                  <li class="description__list-item">- Fix bug in global location in building boundaries.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.41.1
+         - March 06, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added new interface to update location parameters while location system is started.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.40.1
+         - February 24, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fix a crash when starting global location if no connection available.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.40.0
+         - February 18, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved positioning startup times for global positioning using scans based building detection.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.39.0
+         - February 10, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Add new option to <tt>realtimeUpdateInterval</tt> in <tt>SITLocationRequest</tt>. Setting the new value <tt>kSITUpdateNever</tt> will disable the upload of locations to realtime.</li>
+                  <li class="description__list-item">- Fix an issue causing compilation errors due to duplicated symbols with protobuf library. This issue was present since v2.37.1 and affected only installations via Cococapods.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.38.0
+         - February 06, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Add new building detector based on GPS location.</li>
+                  <li class="description__list-item">- Add new attribute <tt>outdoorLocationOptions</tt> to <tt>SITLocationRequest</tt>. It allows selecting which building detector will be used during positioning.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.37.3
+         - January 27, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fix a bug in global location mode that caused the BLE Detector to keep running after stop was called.</li>
+                  <li class="description__list-item">- Fix a bug in indoor location mode that caused the positioning to keep running after stop was called.</li>
+                  <li class="description__list-item">- Improve load time to start positioning in big buildings.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.37.2
+         - January 21, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fix a crash that ocurred when launching global location with bad network coverage.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.37.1
+         - January 14, 2020
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved framework build procedure.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.37.0
+         - December 26, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Requesting twice location updates with same location request now ignores the second call instead of throwing an error.</li>
+                  <li class="description__list-item">- Requesting twice location updates with different location request now restarts the positioning instead of throwing an error.</li>
+                  <li class="description__list-item">- GPS position is now returned in indoor/outdoor while building detector is starting.</li>
+                  <li class="description__list-item">- Changed indoor/outdoor to stop outdoor positioning only when an indoor position is received.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.36.2
+         - October 21, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved the geofences download process.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.36.1
+         - October 15, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fix bug that caused an error in global location when using a location request without building identifier.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.36.0
+         - October 14, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Add indoor outdoor positioning.</li>
+                  <li class="description__list-item">- Add parameter <tt>useGlobalLocation</tt> to <tt>SITLocationRequest</tt>.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.35.0
+         - September 20, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Including infoHtml in SITGeofence. Deprecating description in SITGeofence.</li>
+                  <li class="description__list-item">- Including floor in SITFloor. Deprecating level in SITFloor.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.34.0
+         - August 06, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added new class <tt>SITGeofence</tt>.</li>
+                  <li class="description__list-item">- Added new method <tt>fetchGeofencesFromBuilding: (SITBuilding* _Nonnull) building withOptions: (NSDictionary* _Nullable) options withCompletion: (SITHandler _Nonnull) completion</tt> to <tt>SITCommunicationManager</tt>.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.33.0
+         - July 22, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added custom fields to <tt>SITFloor</tt>.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.32.0
+         - July 08, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added field <tt>name</tt> to <tt>SITFloor</tt>.</li>
+                  <li class="description__list-item">- Removed protobuf as static dependency in Cocoapods. Now protobuf is provided as a pod dependency.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.31.3
+         - July 03, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Published new version of SitumSDK without the protobuf dependency included in the binary.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.31.2
+         - June 27, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fix a bug that caused and outOfRange exception when downloading the building model.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.31.1
+         - May 24, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added modulemap so it can be imported as a module</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.31.0
+         - May 03, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added nullability notation to public interfaces</li>
+              </ul>
+
+
+            <li class="description__list-item"></li>
+
+
+              <blockquote>
+<p><tt>WARNING</tt>: This release provides a new interface for Swift users. It may contain breaking changes, causing compilation problems in your code.</p>
+</blockquote>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.30.1
+         - April 24, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Updated protobuf library to 3.7.1.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.30.0
+         - April 16, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added new constructor <tt>initWithBuilding: floorIdentifier: coordinate:</tt> to the class <tt>SITPoint</tt>.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.29.1
+         - April 11, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed <tt>points</tt> in <tt>SITNavigationProgress</tt>, only the remaining points are included now.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.29.0
+         - April 09, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added parameter <tt>useBarometer</tt> to location request.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.28.0
+         - April 02, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added parameter <tt>smallestDisplacement</tt> to location request.</li>
+                  <li class="description__list-item">- Improved experience on 32-bit devices</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.27.0
+         - March 29, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added parameter <tt>interval</tt>  to location request to control how often position is updated.</li>
+                  <li class="description__list-item">- Changed a bad request error, to be an outside route notification instead, when user changes to unexpected floors during navigation</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.26.1
+         - March 25, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added new class <tt>SITRouteSegment</tt>.</li>
+                  <li class="description__list-item">- Added new methods <tt>points</tt> and <tt>segments</tt> to <tt>SITRoute</tt>.</li>
+                  <li class="description__list-item">- Added new methods <tt>points</tt> and <tt>segments</tt> to <tt>SITNavigationProgress</tt>.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.25.1
+         - March 21, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed an error when trying to stop the positioning right after a <tt>kSITCalculating</tt> is received.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.25.0
+         - March 20, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added a new error <tt>kSITLocationErrorBuildingNotCalibrated</tt> when there is no calibrations for the selected building.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.24.1
+         - March 18, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved the use of cache for positioning</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.24.0
+         - March 14, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added a new method <tt>humanReadableMessageWithLocale:</tt> to SITIndication that allows to select the language of the text.</li>
+                  <li class="description__list-item">- Changed language selection for indications and poi category names. Now only the language selected by the user is taken into account.</li>
+                  <li class="description__list-item">- Fix issue that caused kSITIndicationEnd to disappear</li>
+                  <li class="description__list-item">- Fixed issue while reading outdoor POIs from cache</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.23.0
+         - March 13, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed poi categories names. Now they include a default value with the system language.</li>
+                  <li class="description__list-item">- Fixed human readable message in indications to adapt to system language.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.22.1
+         - March 12, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed an issue when there were no outdoor POIs.</li>
+                  <li class="description__list-item">- Fixed an issue when there were no POIs matching given filters.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.22.0
+         - March 11, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Deprecated <tt>provider</tt> parameter of location request. Location provider is no longer selectable and will be always inPhone.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.21.12
+         - March 07, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved the performance of the gps in the indoor positioning mode.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.21.11
+         - March 04, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed a bug starting positioning that made it fail when authorization to use location is not determined.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.21.10
+         - March 03, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed some cases where last indication in a route was "turn around".</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.21.8
+         - February 28, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed some problems that were causing compilation errors.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.21.7
+         - February 27, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added reading of new custom fields: <tt>use_ble_floor_classifier</tt>.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.21.6
+         - February 20, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved metadata information.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.21.5
+         - February 13, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed a problem that caused compilation problems.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.21.3
+         - February 12, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added barometer data to sensors information used to position.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.21.2
+         - February 11, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added reading of new custom fields: <tt>return_gps_pose_outdoors</tt> and <tt>gps_default_floor_id</tt> from dashboard.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.21.1
+         - January 31, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved data included in internal message writing.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.21.0
+         - January 30, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved gps use with bad signal zones</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.20.0
+         - January 23, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added new error codes <tt>kSITLocationErrorLocationDisabled</tt> and <tt>kSITLocationErrorLocationRestricted</tt> to notify that the location has been disabled or restricted, respectively. This will happen when the location service is off or when the permissions to use the service are denied. This will stop the positioning. To recover after receiving one of this errors you'll have to launch a new request.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.19.0
+         - January 17, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Modified the next <tt>NavigationRequest</tt> default values so that they adapt better to large buildings. <b>This will change the default behaviour of previous versions</b>.</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Increased <tt>SITNavigationRequest.distanceToGoalThreshold</tt> from 5 to 15 meters</li>
+                  <li class="description__list-item">Increased <tt>SITNavigationRequest.distanceToFloorChangeThreshold</tt> from 10 to 15 meters</li>
+                  <li class="description__list-item">Increased <tt>SITNavigationRequest.distanceToChangeIndicationThreshold</tt> from 5 to 8 meters</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.18.5
+         - January 14, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Updated internal dependencies</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.18.4
+         - January 08, 2019
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fixed some positioning bugs</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.18.3
+         - December 21, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fix issues when updating a previously used <tt>SITLocationRequest</tt></li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.18.2
+         - December 20, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Indoor GPS improvements</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.18.1
+         - December 18, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added new error codes <tt>kSITLocationErrorBluetoothIsOff</tt> and <tt>kSITLocationErrorBluetoothIsUnauthorized</tt> to notify that the bluetooth has been disabled or restricted, respectively. This will happen when the bluetooth service is off or when the permissions to use the service are denied. This will stop the positioning. To recover after receiving one of this errors you'll have to launch a new request.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.18.0
+         - December 12, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Add new <tt>realtimeUpdateInterval</tt> property to <tt>SITLocationRequest</tt>.</li>
+                  <li class="description__list-item">- Deprecate <tt>updateInterval</tt> from <tt>SITLocationRequest</tt>.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.17.2
+         - November 29, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Performance improvements.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.17.1
+         - November 27, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fix bug when computing a route using <tt>kSITOnlyNotAccessibleFloorChanges</tt>.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.17.0
+         - November 21, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added new accessibility modes. Possible values are: <tt> kSITChooseShortest, kSITOnlyAccessible, kSITOnlyNotAccessibleFloorChanges </tt>.</li>
+                  <li class="description__list-item">- Fixed some bugs</li>
+              </ul>
+
+
+            <li class="description__list-item">Deprecated:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Deprecated method from SITDirectionsRequest:<tt> - (void) setAccessible: (BOOL) isAccessible. </tt></li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.16.6
+         - November 20, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved code documentation</li>
+                  <li class="description__list-item">- Fixed some bugs causing crashes</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.16.5
+         - November 13, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improve deprecated annotations</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.16.4
+         - November 08, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added human-readable indications in Spanish and English, depending on the current locale</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.16.3
+         - November 06, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Error handling improved</li>
+                  <li class="description__list-item">- Add <tt>dashboardURL</tt> and <tt>setDashboardURL</tt> methods to <tt>SITServices</tt></li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.16.2
+         - November 02, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Prefixed some constants to avoid polluting namespace. Renamed <tt>Auth</tt> to <tt>SITAuth</tt></li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.16.1
+         - October 18, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Add new location state indicating if the compass needs to be calibrated</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.16.0
+         - October 16, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Use of gps data to improve positioning</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.15.0
+         - October 15, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved orientation</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.14.0
+         - October 02, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added an enum with Realtime update intervals</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.13.0
+         - September 19, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added constructors to SITLocationRequest.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.12.0
+         - August 27, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Refactored SITEvent class. Deprecated some properties and added <tt>trigger</tt> and <tt>conversion</tt> properties.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.10.0
+         - August 09, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Included option to reduce the number of floor changes taken during a route.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.9.0
+         - July 24, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added <tt>SITNavigationRequest#timeToIgnoreUnexpectedFloorChanges</tt> to ignore intermediate positions when changing floors for a limited time before changing the route.</li>
+                  <li class="description__list-item">- Improved server communication handling</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.8.1
+         - July 02, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improve navigation experience. Do not take node weight into account when creating a step</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.8.0
+         - June 28, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added realtime support</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.7.0
+         - June 20, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improve user orientation</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.6.4
+         - June 04, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added <tt>SITPostProcessingPipeline</tt></li>
+                  <li class="description__list-item">- Added <tt>SITIndicationsMinimization</tt></li>
+                  <li class="description__list-item">- Added <tt>SITIndicationsFloorChangeMerge</tt></li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.6.3
+         - May 21, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added <tt>SITLocationRequest.useDeadReckoning</tt> parameter</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.6.2
+         - May 16, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added <tt>SITNavigationProgress.closestLocationInRoute</tt> parameter</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.6.1
+         - April 25, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Navigation improvements</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.6.0
+         - April 17, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Added <tt>SITNavigationRequest#setIndicationsInterval</tt> to set the interval to return indications during navigation</li>
+                  <li class="description__list-item">- Added <tt>SITNavigationRequest#setTimeToFirstIndication</tt> to set the time to return the first indication when starting navigation. While starting it will return a <tt>kSITCalculating</tt> indication</li>
+                  <li class="description__list-item">- Added <tt>SITNavigationRequest#setRoundIndicationsStep</tt> to group the distances of the indications</li>
+                  <li class="description__list-item">- Added method <tt>SITRouteStep#hasFloorChange</tt> that returns <tt>YES</tt> if there is a floor change in that route step</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.5.9
+         - April 12, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Add more information to <tt>SITNavigationProgress</tt></li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.5.8
+         - April 05, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Expose threshold customization methods on <tt>SITNavigationRequest</tt></li>
+                  <li class="description__list-item">- Fix empty SITPoi.customFields on some devices</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.5.6
+         - April 02, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Show the next indication when the user gets within a given threshold</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.5.5
+         - March 20, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Fix compatibility issue with <tt>SITRouteStep</tt> creation</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.5.4
+         - March 15, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Show <tt>kSITChangeFloor</tt> indication when the user gets within a given threshold around a floor change</li>
+                  <li class="description__list-item">- Edit <tt>kSITChangeFloor</tt> indication to show destination level insted the number of levels to go up/down. Added <tt>nextLevel</tt></li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.5.3
+         - March 05, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Better support for developers</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.5.2
+         - February 12, 2018
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved stability and logging support</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.4.3
+         - October 04, 2017
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Enhancements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved navigation.</li>
+                  <li class="description__list-item">- Support custom beacons.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.2.0
+         - October 03, 2017
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Enhancements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">- Improved directions functionality.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.1.0
+         - September 19, 2017
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Bug fix:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Fetching floors of buildings</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 2.0.0
+         - March 28, 2017
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Redesign interfaces</li>
+                  <li class="description__list-item">New Location, Directions and Navigation modules</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.1.4-beta
+         - May 25, 2016
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Bug fix:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">stop reporting location</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.2.3
+         - November 17, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Enhancements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Production.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.2.3
+         - October 09, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Detected if the user is not in a building.</li>
+                  <li class="description__list-item">New protocol (<tt>SITIndoorLocationManagerDelegate</tt>) that informs about the <tt>SITIndoorLocationManager</tt> state and errors.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.2.2
+         - September 24, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Events for building</li>
+              </ul>
+
+
+            <li class="description__list-item">Bug fix:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Positioning not working because of ssl changes.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.2.1
+         - September 18, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Including support for SSL connections.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.2.0
+         - September 16, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">filter POIs based on category and level.</li>
+
+
+
+            <li class="description__list-item">better performance computing routes.</li>
+
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.1.7-beta
+         - July 17, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Buildings completely aligned on maps.</li>
+                  <li class="description__list-item">Including <tt>sergasID</tt> field on <tt>SITIndoorBuilding</tt> and <tt>SITPOI</tt>.</li>
+                  <li class="description__list-item">Including <tt>hasShifts</tt> property on <tt>SITPOI</tt>.</li>
+                  <li class="description__list-item">New rotation property on <tt>SITIndoorBuilding</tt>.</li>
+              </ul>
+
+
+            <li class="description__list-item">Bug fix:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Routes try to calculate a route inside a floor if possible.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.1.6-beta
+         - June 08, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">IPS: General improvements</li>
+              </ul>
+
+
+            <li class="description__list-item">Changes:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item"><tt>SITIndoorLocation</tt> now returns floor identifier instead of the position inside <tt>indoorLevels</tt></li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.1.5-beta
+         - June 01, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">you can calculate accessible route inside buildings.</li>
+              </ul>
+
+
+            <li class="description__list-item">Bug fix:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item"><tt>indoorPointFromCoordinate</tt> solve issue when calculating indoor points from a geographical coordinate.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.1.3-beta
+         - May 07, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Bug fixes and performance improvements</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.1.2-beta
+         - April 16, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">Including Routes. Now you can calculate the route between two points of a building.</li>
+              </ul>
+
+
+            <li class="description__list-item">Bug fix:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">coordinate conversor.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.1.1-beta
+         - March 24, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Improvements:</li>
+
+              <ul class="description__list">
+                  <li class="description__list-item">New functionality (<tt>SITIndoorBuilding</tt>) to convert coordinates from Geographic coordinate system to floorpan space and viceversa.</li>
+              </ul>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="changelog__list--item">
+      <div class="list--item__title">
+        Version 0.1.0-beta
+         - March 08, 2015
+      </div>
+
+      <div class="list--item__description">
+        <ul class="description__list">
+            <li class="description__list-item">Initial beta</li>
+
+
+
+        </ul>
+      </div>
+    </div>
+
+</div>
+
+</div>
+
+                      <input type="checkbox" id="open-navbar" class="check-navbar">
+<div class="drawer">
+  <div class="navbar__nav-logo">
+<a href="../../../">      <img src="../../../images/common/situm-logo.png" class="nav-logo__image" alt="Situm logo" />
+</a>  </div>
+  <div class="clear"></div>
+
+  <div class="navbar__nav-links">
+      <a href="https://situm.com/en/" class="navbar-link ">Situm.com</a>
+      <a href="../../../" class="navbar-link ">Home</a>
+      <a href="../" class="navbar-link ">Mobile SDKs</a>
+      <a href="../../wayfinding/" class="navbar-link ">Wayfinding Module</a>
+      <a href="../../rest/" class="navbar-link ">Situm REST API</a>
+      <a href="../../terminology/" class="navbar-link ">Terminology</a>
+      <a href="https://situm.es/en/faq" class="navbar-link ">Support</a>
+  </div>
+
+  <div class="navbar__footer">
+    <div class="social-icons">
+<a href="https://www.facebook.com/situm.es" target="_blank">          <img src="../../../images/social/facebook-icon.svg" class="social-icons__icon" alt="Facebook icon" />
+</a><a href="https://www.linkedin.com/company/situmtechnologies" target="_blank">          <img src="../../../images/social/linkedin-icon.svg" class="social-icons__icon" alt="Linkedin icon" />
+</a><a href="https://www.youtube.com/channel/UCD6lPAxYK20WStHKnRw3I2A" target="_blank">          <img src="../../../images/social/youtube-icon.svg" class="social-icons__icon" alt="Youtube icon" />
+</a><a href="https://twitter.com/situm_es" target="_blank">          <img src="../../../images/social/twitter-icon.svg" class="social-icons__icon" alt="Twitter icon" />
+</a>    </div>
+    <p class="copyright">COPYRIGHT &copy; SITUM TECHNOLOGIES 2014 - 2021</p>
+  </div>
+</div>
+
+<div class="obfuscator">
+<label for="open-navbar" class="obfuscator__navbar-label"></label>
+</div>
+
+                    </div>
+                    <div class="clear"></div>
+                    <nav class="footer-wrapper">
+  <div class="row footer-wrapper__content wrapper-4">
+  <p class="address">
+    R&uacute;a do Restollal 32, Ediﬁcio Paxonal, Planta 4, Of. 401<br />
+    15702 Santiago de Compostela, A Coruña, Spain
+  </p>
+    <div class="social-footer-icons">
+<a href="https://www.facebook.com/situm.es" target="_blank" class="social-icon__link">          <div class="social-icons__icon">
+  <svg
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     version="1.1"
+     id="Capa_1"
+     x="0px"
+     y="0px"
+     viewBox="0 0 155.139 155.139"
+     xml:space="preserve"
+     width="512px"
+     height="512px"
+     inkscape:version="0.91 r13725"
+     sodipodi:docname="facebook-icon.svg"
+     style="enable-background:new 0 0 155.139 155.139;"><metadata
+       id="metadata40"><rdf:RDF><cc:Work
+           rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+             rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+       id="defs38" /><sodipodi:namedview
+       pagecolor="#ffffff"
+       bordercolor="#666666"
+       borderopacity="1"
+       objecttolerance="10"
+       gridtolerance="10"
+       guidetolerance="10"
+       inkscape:pageopacity="0"
+       inkscape:pageshadow="2"
+       inkscape:window-width="1855"
+       inkscape:window-height="1056"
+       id="namedview36"
+       showgrid="false"
+       inkscape:zoom="0.4609375"
+       inkscape:cx="-151.27032"
+       inkscape:cy="-28.203442"
+       inkscape:window-x="65"
+       inkscape:window-y="24"
+       inkscape:window-maximized="1"
+       inkscape:current-layer="Capa_1" /><g
+       id="g3"><path
+         id="f_1_"
+         d="M89.584,155.139V84.378h23.742l3.562-27.585H89.584V39.184   c0-7.984,2.208-13.425,13.67-13.425l14.595-0.006V1.08C115.325,0.752,106.661,0,96.577,0C75.52,0,61.104,12.853,61.104,36.452   v20.341H37.29v27.585h23.814v70.761H89.584z"
+         fill="#FFFFFF" /></g><g
+       id="g6" /><g
+       id="g8" /><g
+       id="g10" /><g
+       id="g12" /><g
+       id="g14" /><g
+       id="g16" /><g
+       id="g18" /><g
+       id="g20" /><g
+       id="g22" /><g
+       id="g24" /><g
+       id="g26" /><g
+       id="g28" /><g
+       id="g30" /><g
+       id="g32" /><g
+       id="g34" /></svg>
+</div>
+
+</a><a href="https://www.linkedin.com/company/situmtechnologies" target="_blank" class="social-icon__link">          <div class="social-icons__icon">
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 438.536 438.535" style="enable-background:new 0 0 438.536 438.535;" xml:space="preserve">
+	<g>
+		<g>
+			<rect x="5.424" y="145.895" width="94.216" height="282.932" fill="#FFFFFF"/>
+			<path d="M408.842,171.739c-19.791-21.604-45.967-32.408-78.512-32.408c-11.991,0-22.891,1.475-32.695,4.427    c-9.801,2.95-18.079,7.089-24.838,12.419c-6.755,5.33-12.135,10.278-16.129,14.844c-3.798,4.337-7.512,9.389-11.136,15.104    v-40.232h-93.935l0.288,13.706c0.193,9.139,0.288,37.307,0.288,84.508c0,47.205-0.19,108.777-0.572,184.722h93.931V270.942    c0-9.705,1.041-17.412,3.139-23.127c4-9.712,10.037-17.843,18.131-24.407c8.093-6.572,18.13-9.855,30.125-9.855    c16.364,0,28.407,5.662,36.117,16.987c7.707,11.324,11.561,26.98,11.561,46.966V428.82h93.931V266.664    C438.529,224.976,428.639,193.336,408.842,171.739z" fill="#FFFFFF"/>
+			<path d="M53.103,9.708c-15.796,0-28.595,4.619-38.4,13.848C4.899,32.787,0,44.441,0,58.529c0,13.891,4.758,25.505,14.275,34.829    c9.514,9.325,22.078,13.99,37.685,13.99h0.571c15.99,0,28.887-4.661,38.688-13.99c9.801-9.324,14.606-20.934,14.417-34.829    c-0.19-14.087-5.047-25.742-14.561-34.973C81.562,14.323,68.9,9.708,53.103,9.708z" fill="#FFFFFF"/>
+		</g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	</svg>
+</div>
+
+</a><a href="https://www.youtube.com/channel/UCD6lPAxYK20WStHKnRw3I2A" target="_blank" class="social-icon__link">          <div class="social-icons__icon">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512px" version="1.1" height="512px" viewBox="0 0 64 64" enable-background="new 0 0 64 64">
+    <g>
+      <g>
+        <g fill="#1D1D1B">
+          <path d="m37.635,41.44c-0.542,0-1.088,0.257-1.635,0.79v10.999c0.547,0.544 1.093,0.806 1.635,0.806 0.941,0 1.423-0.806 1.423-2.434v-7.698c0.001-1.632-0.482-2.463-1.423-2.463z" fill="#FFFFFF"/>
+          <path d="m49.601,41.44c-1.093,0-1.642,0.831-1.642,2.502v1.671h3.274v-1.671c0.001-1.671-0.546-2.502-1.632-2.502z" fill="#FFFFFF"/>
+          <g>
+            <path d="m56.396,29.049c-2.055-2.139-4.357-2.148-5.414-2.271-7.556-0.54-18.889-0.54-18.889-0.54h-0.025c0,0-11.333,0-18.896,0.54-1.054,0.123-3.352,0.133-5.409,2.271-1.618,1.632-2.147,5.327-2.147,5.327s-0.536,4.343-0.536,8.685v4.073c0,4.341 0.536,8.686 0.536,8.686s0.529,3.695 2.147,5.321c2.057,2.139 4.753,2.072 5.952,2.295 4.324,0.413 18.365,0.538 18.365,0.538s11.347-0.016 18.903-0.562c1.057-0.121 3.359-0.133 5.414-2.271 1.619-1.626 2.147-5.321 2.147-5.321s0.536-4.345 0.536-8.686v-4.073c0-4.342-0.536-8.685-0.536-8.685s-0.529-3.695-2.148-5.327zm-39.417,27.706h-3.642v-20.802h-3.851v-3.406h11.414v3.406h-3.92v20.802zm12.912,0h-3.278v-1.969c-1.299,1.489-2.54,2.221-3.742,2.221-1.054,0-1.781-0.432-2.112-1.346-0.178-0.546-0.286-1.409-0.286-2.683v-14.261h3.275v13.28c0,0.765 0,1.164 0.024,1.27 0.083,0.507 0.336,0.769 0.771,0.769 0.658,0 1.341-0.507 2.069-1.533v-13.786h3.278v18.038zm12.44-5.409c0,1.663-0.11,2.866-0.331,3.631-0.438,1.344-1.313,2.03-2.613,2.03-1.168,0-2.294-0.647-3.387-1.999v1.747h-3.277v-24.208h3.277v7.905c1.056-1.299 2.179-1.956 3.387-1.956 1.299,0 2.174,0.688 2.613,2.036 0.221,0.729 0.331,1.918 0.331,3.628v7.186zm12.179-3.016h-6.55v3.199c0,1.671 0.549,2.506 1.673,2.506 0.806,0 1.275-0.44 1.463-1.311 0.029-0.178 0.073-0.908 0.073-2.219h3.341v0.479c0,1.051-0.043,1.776-0.071,2.106-0.108,0.723-0.368,1.378-0.766,1.955-0.906,1.312-2.25,1.96-3.963,1.96-1.711,0-3.014-0.618-3.96-1.853-0.696-0.902-1.051-2.326-1.051-4.241v-6.319c0-1.927 0.318-3.333 1.012-4.249 0.946-1.234 2.249-1.849 3.922-1.849 1.643,0 2.947,0.614 3.863,1.849 0.685,0.916 1.015,2.322 1.015,4.249v3.738z" fill="#FFFFFF"/>
+            <path d="m23.436,24.434v-9.908l4.412-14.552h-3.71l-2.503,9.605-2.605-9.605h-3.863c0.777,2.268 1.581,4.544 2.356,6.816 1.174,3.411 1.91,5.982 2.244,7.735v9.908h3.669z" fill="#FFFFFF"/>
+            <path d="m32.047,24.685c1.656,0 2.942-0.624 3.858-1.864 0.692-0.91 1.029-2.346 1.029-4.287v-6.387c0-1.945-0.337-3.367-1.029-4.289-0.917-1.25-2.202-1.87-3.858-1.87-1.654,0-2.943,0.62-3.854,1.87-0.707,0.922-1.034,2.344-1.034,4.289v6.387c0,1.941 0.327,3.377 1.034,4.287 0.911,1.24 2.2,1.864 3.854,1.864zm-1.581-13.199c0-1.686 0.514-2.529 1.581-2.529 1.062,0 1.573,0.844 1.573,2.529v7.669c0,1.687-0.511,2.53-1.573,2.53-1.067,0-1.581-0.844-1.581-2.53v-7.669z" fill="#FFFFFF"/>
+            <path d="m48.988,24.434v-18.231h-3.308v13.935c-0.733,1.034-1.427,1.548-2.088,1.548-0.445,0-0.708-0.265-0.777-0.773-0.042-0.109-0.042-0.51-0.042-1.285v-13.425h-3.299v14.418c0,1.289 0.108,2.161 0.293,2.711 0.332,0.92 1.068,1.353 2.133,1.353 1.204,0 2.46-0.732 3.781-2.24v1.989h3.307z" fill="#FFFFFF"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+
+</a><a href="https://twitter.com/situm_es" target="_blank" class="social-icon__link">          <div class="social-icons__icon">
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+	<g>
+		<path d="M512.002,97.211c-18.84,8.354-39.082,14.001-60.33,16.54c21.686-13,38.342-33.585,46.186-58.115   c-20.299,12.039-42.777,20.78-66.705,25.49c-19.16-20.415-46.461-33.17-76.674-33.17c-58.011,0-105.042,47.029-105.042,105.039   c0,8.233,0.929,16.25,2.72,23.939c-87.3-4.382-164.701-46.2-216.509-109.753c-9.042,15.514-14.223,33.558-14.223,52.809   c0,36.444,18.544,68.596,46.73,87.433c-17.219-0.546-33.416-5.271-47.577-13.139c-0.01,0.438-0.01,0.878-0.01,1.321   c0,50.894,36.209,93.348,84.261,103c-8.813,2.399-18.094,3.687-27.674,3.687c-6.769,0-13.349-0.66-19.764-1.888   c13.368,41.73,52.16,72.104,98.126,72.949c-35.95,28.176-81.243,44.967-130.458,44.967c-8.479,0-16.84-0.496-25.058-1.471   c46.486,29.807,101.701,47.197,161.021,47.197c193.211,0,298.868-160.062,298.868-298.872c0-4.554-0.104-9.084-0.305-13.59   C480.111,136.775,497.92,118.275,512.002,97.211z" fill="#FFFFFF"/>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	</svg>
+</div>
+
+</a>      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+      <div class="footer-wrapper__content--part option-0">
+        <div class="content--part__title">
+          SDKs & APIs
+        </div>
+        <div class="content--part__list">
+            <li class="content--part__list-item">
+<a href="../android/">                Android SDK
+</a>            </li>
+            <li class="content--part__list-item">
+<a href="./">                iOS SDK
+</a>            </li>
+            <li class="content--part__list-item">
+<a href="../cordova/">                Cordova SDK
+</a>            </li>
+            <li class="content--part__list-item">
+<a href="../../rest/">                Situm Rest API
+</a>            </li>
+            <li class="content--part__list-item">
+<a href="../../wayfinding/">                Situm Wayfinding Module
+</a>            </li>
+        </div>
+      </div>
+      <div class="footer-wrapper__content--part option-1">
+        <div class="content--part__title">
+          Resources
+        </div>
+        <div class="content--part__list">
+            <li class="content--part__list-item">
+<a href="http://dashboard.situm.com/" target="_blank">                Situm Dashboard
+</a>            </li>
+            <li class="content--part__list-item">
+<a href="../../terminology/">                Terminology
+</a>            </li>
+            <li class="content--part__list-item">
+<a href="../../public_funds/">                Public Funds
+</a>            </li>
+        </div>
+      </div>
+      <div class="footer-wrapper__content--part option-2">
+        <div class="content--part__title">
+          Support
+        </div>
+        <div class="content--part__list">
+            <li class="content--part__list-item">
+<a href="https://situm.es/en/faq" target="_blank">                FAQ
+</a>            </li>
+            <li class="content--part__list-item">
+<a href="mailto:support@situm.es">                Contact us
+</a>            </li>
+        </div>
+      </div>
+      <div class="footer-wrapper__content--part option-3">
+        <div class="content--part__title">
+          About Situm
+        </div>
+        <div class="content--part__list">
+            <li class="content--part__list-item">
+<a href="https://situm.com/" target="_blank">                Situm Website
+</a>            </li>
+            <li class="content--part__list-item">
+<a href="https://play.google.com/store/apps/details?id=es.situm.maps" target="_blank">                Situm Maps for Android
+</a>            </li>
+        </div>
+      </div>
+    <div class="clear"></div>
+    <p class="copyright">COPYRIGHT &copy; SITUM TECHNOLOGIES 2014 - 2021</p>
+  </div>
+</nav>
+
+                    <div id="cookies-container" class="cookie-policy-container">
+  <div class="cookie-policy-container__message">
+    <span class="cookie-policy-container__message--text">
+      We use cookies from third parties to get statistical data from your use of this website. If you continue without changing your settings, we’ll assume that you agree to receive all cookies on this website. However, you can change your cookie settings and get more information at any time
+    </span>
+
+<a href="../../legal/" class="cookie-policy-container__more-information">      <span class="more-information__text">
+        here.
+      </span>
+</a>
+    <a href="#" onclick="Cookies.controlCookies(event)" class="cookie-policy-container__link-agree">
+      <span class="link-agree__text">
+        Accept
+      </span>
+    </a>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  Cookies.init();
+</script>
+
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

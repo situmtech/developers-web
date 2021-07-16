@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SitumMapsLibrary Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SitumMapsLibrary" class="dashAnchor"></a>
+    <a title="SitumMapsLibrary Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SitumWayfinding 0.1.13 Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SitumWayfinding Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SitumMapsLibrary Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Credentials.html">Credentials</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LibrarySettings.html">LibrarySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LibrarySettings/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SitumMapsLibrary.html">SitumMapsLibrary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@SitumWayfinding@objc(cs)SitumView">SitumView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/UnsupportedConfigurationError.html">UnsupportedConfigurationError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SitumMap.html">SitumMap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SitumMapsLibrary</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">SitumMapsLibrary</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/SitumMap.html">SitumMap</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Class used to load the wayfinding module on a given view</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15SitumWayfinding0A11MapsLibraryC8settingsAA0D8SettingsCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/settings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SitumWayfinding0A11MapsLibraryC8settingsAA0D8SettingsCSgvp">settings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Settings variable used to configure the module with all needed parameters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/LibrarySettings.html">LibrarySettings</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)initWithContainedBy:controlledBy:"></a>
+                    <a name="//apple_ref/swift/Method/init(containedBy:controlledBy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)initWithContainedBy:controlledBy:">init(containedBy:<wbr>controlledBy:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the library and checks the user&rsquo;s credentials.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, renamed: "init", message: "Please use ")</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">containedBy</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="n">controlledBy</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>View object that will contain the wayfinding UI</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>View controller associated with the containing view</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)initWithContainedBy:controlledBy:withSettings:"></a>
+                    <a name="//apple_ref/swift/Method/init(containedBy:controlledBy:withSettings:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)initWithContainedBy:controlledBy:withSettings:">init(containedBy:<wbr>controlledBy:<wbr>withSettings:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Designated initializer</p>
+
+<p>Use this to create an instance of the SitumMapsLibrary.</p>
+
+<p>After that, load it into memory with the load() method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">containedBy</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="n">controlledBy</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="n">withSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/LibrarySettings.html">LibrarySettings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)loadAndReturnError:"></a>
+                    <a name="//apple_ref/swift/Method/load()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)loadAndReturnError:">load()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>try to load the module. This method can throw an exception if needed parameters are not set. See init method to know how to properly configure an instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">load</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)setCredentials:"></a>
+                    <a name="//apple_ref/swift/Method/setCredentials(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)setCredentials:">setCredentials(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the credentials that will be used to authenticate when &ldquo;load(buildingWithId:, logWith:)&rdquo; is called</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Use property on LibrarySettings instance instead")</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setCredentials</span><span class="p">(</span><span class="n">_</span> <span class="nv">credentials</span><span class="p">:</span> <span class="kt"><a href="../Classes/Credentials.html">Credentials</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)loadWithBuildingWithId:error:"></a>
+                    <a name="//apple_ref/swift/Method/load(buildingWithId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)loadWithBuildingWithId:error:">load(buildingWithId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads the Wayfinding UI in the assigned view and shows the selected building.
+If no Credentials have been set, this method will throw an exception.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Use load instead")</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">load</span><span class="p">(</span><span class="n">buildingWithId</span> <span class="nv">buildingId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Id of the building to be load</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)loadWithBuildingWithId:googleMapsMap:error:"></a>
+                    <a name="//apple_ref/swift/Method/load(buildingWithId:googleMapsMap:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)loadWithBuildingWithId:googleMapsMap:error:">load(buildingWithId:<wbr>googleMapsMap:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads the Wayfinding UI in the assigned view using the provided map and shows the selected building.
+If no Credentials have been set, this method will throw an exception.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Use load instead")</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">load</span><span class="p">(</span><span class="n">buildingWithId</span> <span class="nv">buildingId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">googleMapsMap</span> <span class="nv">gMap</span><span class="p">:</span> <span class="kt">GMSMapView</span><span class="p">?)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Id of the building to be load</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>googleMapsMap</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Map to be used to present info</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)stopNavigation"></a>
+                    <a name="//apple_ref/swift/Method/stopNavigation()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)stopNavigation">stopNavigation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops Stum Navigation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopNavigation</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)stopPositioning"></a>
+                    <a name="//apple_ref/swift/Method/stopPositioning()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)stopPositioning">stopPositioning()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops Situm Positioning</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopPositioning</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15SitumWayfinding0A11MapsLibraryC12getGoogleMapSo10GMSMapViewCSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getGoogleMap()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SitumWayfinding0A11MapsLibraryC12getGoogleMapSo10GMSMapViewCSgyF">getGoogleMap()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides the GMSMapView instance used inside the Wayfinding view</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Use LibrarySettings.getGoogleMap instead")</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">getGoogleMap</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">GMSMapView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A GMSMapView instance which is the same being used by the Wayfinding controller</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)getSettings"></a>
+                    <a name="//apple_ref/swift/Method/getSettings()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SitumWayfinding@objc(cs)SitumMapsLibrary(im)getSettings">getSettings()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the properties the module has been loaded with.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">getSettings</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LibrarySettings.html">LibrarySettings</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15SitumWayfinding0A11MapsLibraryC24setOnBackPressedCallbackyyyypcF"></a>
+                    <a name="//apple_ref/swift/Method/setOnBackPressedCallback(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SitumWayfinding0A11MapsLibraryC24setOnBackPressedCallbackyyyypcF">setOnBackPressedCallback(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows setting a closure with a custom exit segue that will be executed when the &ldquo;Go back&rdquo; button is pressed.
+You may also include operations to be done before closing the wayfinding view. If no callback is set, the
+wayfinding view will try to exit using NavigationController method: popViewController(animated: Bool)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setOnBackPressedCallback</span><span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure used to perform the exit segue from the wayfinding view</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15SitumWayfinding0A11MapsLibraryC29addLocationRequestInterceptoryyySo011SITLocationG0CcF"></a>
+                    <a name="//apple_ref/swift/Method/addLocationRequestInterceptor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SitumWayfinding0A11MapsLibraryC29addLocationRequestInterceptoryyySo011SITLocationG0CcF">addLocationRequestInterceptor(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets an interceptor to read or modify the location request before is actually used to start positioning.
+Multiple interceptors can be add and they will be executed in the same order as they were set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addLocationRequestInterceptor</span><span class="p">(</span><span class="n">_</span> <span class="nv">interceptor</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">SITLocationRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interceptor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure that will be executed with the location request as its parameter before starting the positioning</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15SitumWayfinding0A11MapsLibraryC31addDirectionsRequestInterceptoryyySo013SITDirectionsG0CcF"></a>
+                    <a name="//apple_ref/swift/Method/addDirectionsRequestInterceptor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SitumWayfinding0A11MapsLibraryC31addDirectionsRequestInterceptoryyySo013SITDirectionsG0CcF">addDirectionsRequestInterceptor(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets an interceptor to read or modify the directions request before is actually used to start guiding
+Multiple interceptors can be add and they will be executed in the same order as they were set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addDirectionsRequestInterceptor</span><span class="p">(</span><span class="n">_</span> <span class="nv">interceptor</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">SITDirectionsRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interceptor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure that will be executed with the directions request as its parameter before starting the guidance</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15SitumWayfinding0A11MapsLibraryC31addNavigationRequestInterceptoryyySo013SITNavigationG0CcF"></a>
+                    <a name="//apple_ref/swift/Method/addNavigationRequestInterceptor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SitumWayfinding0A11MapsLibraryC31addNavigationRequestInterceptoryyySo013SITNavigationG0CcF">addNavigationRequestInterceptor(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets an interceptor to read or modify the navigation request before is actually used to obtain a route
+Multiple interceptors can be add and they will be executed in the same order as they were set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addNavigationRequestInterceptor</span><span class="p">(</span><span class="n">_</span> <span class="nv">interceptor</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">SITNavigationRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interceptor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure that will be executed with the navigation request as its parameter before starting the navigation</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://situm.es" target="_blank" rel="external">Situm Technologies S.L.</a>. All rights reserved. (Last updated: 2021-05-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

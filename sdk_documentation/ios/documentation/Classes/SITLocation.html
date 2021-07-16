@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SITLocation Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/SITLocation" class="dashAnchor"></a>
+    <a title="SITLocation Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SitumSDK 2.51.0 Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SitumSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SITLocation Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SITAngle.html">SITAngle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBeaconFilter.html">SITBeaconFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBuilding.html">SITBuilding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBuildingInfo.html">SITBuildingInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBuildingResource.html">SITBuildingResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCartesianCoordinate.html">SITCartesianCoordinate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCircularArea.html">SITCircularArea</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCommunicationManager.html">SITCommunicationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCoordinateConverter.html">SITCoordinateConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCustomField.html">SITCustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITDimensions.html">SITDimensions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITDirectionsManager.html">SITDirectionsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITDirectionsRequest.html">SITDirectionsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITEvent.html">SITEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITFloor.html">SITFloor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITFloorResource.html">SITFloorResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITGeofence.html">SITGeofence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITGeofenceBuilder.html">SITGeofenceBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITIndication.html">SITIndication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocation.html">SITLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocationManager.html">SITLocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocationParametersUpdate.html">SITLocationParametersUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocationRequest.html">SITLocationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITMultilanguageString.html">SITMultilanguageString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITNavigationManager.html">SITNavigationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITNavigationProgress.html">SITNavigationProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITNavigationRequest.html">SITNavigationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITOccurrence.html">SITOccurrence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITOrganizationTheme.html">SITOrganizationTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITOutdoorLocationOptions.html">SITOutdoorLocationOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPOI.html">SITPOI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPOIBase.html">SITPOIBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPOICategory.html">SITPOICategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPoint.html">SITPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRealTimeData.html">SITRealTimeData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRealTimeManager.html">SITRealTimeManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRealTimeRequest.html">SITRealTimeRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITResource.html">SITResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRoute.html">SITRoute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRouteSegment.html">SITRouteSegment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRouteStep.html">SITRouteStep</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITServices.html">SITServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITThemeColors.html">SITThemeColors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITURL.html">SITURL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SITAccessibilityMode.html">SITAccessibilityMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITDirectionsError.html">SITDirectionsError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITIndoorLocationManagerStates.html">SITIndoorLocationManagerStates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITLocationError.html">SITLocationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITLocationState.html">SITLocationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITNavigationError.html">SITNavigationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITRealTimeError.html">SITRealTimeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITRealtimeUpdateInterval.html">SITRealtimeUpdateInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITBackgroundAccuracy.html">kSITBackgroundAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITBuildingDetector.html">kSITBuildingDetector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITIndicationActions.html">kSITIndicationActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITIndicationOrientation.html">kSITIndicationOrientation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITOccurrenceAction.html">kSITOccurrenceAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITQualityValues.html">kSITQualityValues</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SITDirectionsDelegate.html">SITDirectionsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITDirectionsInterface.html">SITDirectionsInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITLocationDelegate.html">SITLocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITLocationInterface.html">SITLocationInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITLocationParametersUpdateBuilder.html">SITLocationParametersUpdateBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITNavigationDelegate.html">SITNavigationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITNavigationInterface.html">SITNavigationInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITRealTimeDelegate.html">SITRealTimeDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITRealTimeInterface.html">SITRealTimeInterface</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SITBounds.h@T@SITBounds">SITBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SITCartesianCoordinate.h@T@SITCartesianMeters">SITCartesianMeters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/SITBounds.html">SITBounds</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SITLocation</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SITLocation</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSCopying</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SITLocation</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSCopying</span></code></pre>
+
+                </div>
+              </div>
+            <p>Describes a geographical position of the user, either indoor or outdoor.
+A valid indoor location has floorIdentifier and cartesianCoordinate in its position property.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/objc/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><p>Initializers</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(im)initWithTimestamp:position:bearing:cartesianBearing:quality:accuracy:provider:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithTimestamp:position:bearing:cartesianBearing:quality:accuracy:provider:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(im)initWithTimestamp:position:bearing:cartesianBearing:quality:accuracy:provider:">-initWithTimestamp:<wbr>position:<wbr>bearing:<wbr>cartesianBearing:<wbr>quality:<wbr>accuracy:<wbr>provider:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nf">initWithTimestamp</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">timestamp</span>
+                                  <span class="nf">position</span><span class="p">:(</span><span class="n"><a href="../Classes/SITPoint.html">SITPoint</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">position</span>
+                                   <span class="nf">bearing</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">bearing</span>
+                          <span class="nf">cartesianBearing</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">cartesianBearing</span>
+                                   <span class="nf">quality</span><span class="p">:(</span><span class="n"><a href="../Enums/kSITQualityValues.html">kSITQualityValues</a></span><span class="p">)</span><span class="nv">quality</span>
+                                  <span class="nf">accuracy</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">accuracy</span>
+                                  <span class="nf">provider</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">provider</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">timestamp</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span> <span class="nv">position</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITPoint.html">SITPoint</a></span><span class="p">,</span> <span class="nv">bearing</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">cartesianBearing</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">quality</span><span class="p">:</span> <span class="n"><a href="../Enums/kSITQualityValues.html">kSITQualityValues</a></span><span class="p">,</span> <span class="nv">accuracy</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timestamp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>since 1970 when the location was determined, in milliseconds</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>position</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>geographical coordinate information.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bearing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the direction in which the device is traveling in geographical coordinate system (degrees)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cartesianBearing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The direction in which the device is traveling in cartesian coordinate system (radians)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>quality</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>indicative of quality calculated with accuracy and building size.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accuracy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ccuracy radius (in meters).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>provider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>multiple providers can create locations. Determines which one has determined the location.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>initialized location</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(im)initWithTimestamp:position:bearing:cartesianBearing:quality:bearingQuality:accuracy:provider:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithTimestamp:position:bearing:cartesianBearing:quality:bearingQuality:accuracy:provider:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(im)initWithTimestamp:position:bearing:cartesianBearing:quality:bearingQuality:accuracy:provider:">-initWithTimestamp:<wbr>position:<wbr>bearing:<wbr>cartesianBearing:<wbr>quality:<wbr>bearingQuality:<wbr>accuracy:<wbr>provider:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nf">initWithTimestamp</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">timestamp</span>
+                                  <span class="nf">position</span><span class="p">:(</span><span class="n"><a href="../Classes/SITPoint.html">SITPoint</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">position</span>
+                                   <span class="nf">bearing</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">bearing</span>
+                          <span class="nf">cartesianBearing</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">cartesianBearing</span>
+                                   <span class="nf">quality</span><span class="p">:(</span><span class="n"><a href="../Enums/kSITQualityValues.html">kSITQualityValues</a></span><span class="p">)</span><span class="nv">quality</span>
+                            <span class="nf">bearingQuality</span><span class="p">:(</span><span class="n"><a href="../Enums/kSITQualityValues.html">kSITQualityValues</a></span><span class="p">)</span><span class="nv">bearingQuality</span>
+                                  <span class="nf">accuracy</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">accuracy</span>
+                                  <span class="nf">provider</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">provider</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">timestamp</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span> <span class="nv">position</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITPoint.html">SITPoint</a></span><span class="p">,</span> <span class="nv">bearing</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">cartesianBearing</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">quality</span><span class="p">:</span> <span class="n"><a href="../Enums/kSITQualityValues.html">kSITQualityValues</a></span><span class="p">,</span> <span class="nv">bearingQuality</span><span class="p">:</span> <span class="n"><a href="../Enums/kSITQualityValues.html">kSITQualityValues</a></span><span class="p">,</span> <span class="nv">accuracy</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timestamp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>since 1970 when the location was determined, in milliseconds</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>position</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>geographical coordinate information.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bearing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the direction in which the device is traveling in geographical coordinate system (degrees)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cartesianBearing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The direction in which the device is traveling in cartesian coordinate system (radians)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>quality</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>indicative of quality calculated with accuracy and building size.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bearingQuality</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>indication of the quality of the bearing value</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accuracy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ccuracy radius (in meters).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>provider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>multiple providers can create locations. Determines which one has determined the location.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>initialized location</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(py)timestamp"></a>
+                    <a name="//apple_ref/objc/Property/timestamp" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(py)timestamp">timestamp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The time interval since 1970 at which this location was determined, expressed in milliseconds</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSTimeInterval</span> <span class="n">timestamp</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">timestamp</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(py)position"></a>
+                    <a name="//apple_ref/objc/Property/position" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(py)position">position</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Geographical coordinate information.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/SITPoint.html">SITPoint</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">position</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">position</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITPoint.html">SITPoint</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(py)bearing"></a>
+                    <a name="//apple_ref/objc/Property/bearing" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(py)bearing">bearing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The direction in which the device is traveling in geographical coordinate system (can be directly applied to a map provider)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/SITAngle.html">SITAngle</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">bearing</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bearing</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITAngle.html">SITAngle</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(py)cartesianBearing"></a>
+                    <a name="//apple_ref/objc/Property/cartesianBearing" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(py)cartesianBearing">cartesianBearing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The direction in which the device is traveling in cartesian coordinate system.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/SITAngle.html">SITAngle</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cartesianBearing</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cartesianBearing</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITAngle.html">SITAngle</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(py)bearingQuality"></a>
+                    <a name="//apple_ref/objc/Property/bearingQuality" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(py)bearingQuality">bearingQuality</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indication of the quality of the bearing value</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    kSITHigh means the system is very confident on the bearing values. kSITLow means the system is still trying to determine the correct bearing; this situation happens when initializing the system.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/kSITQualityValues.html">kSITQualityValues</a></span> <span class="n">bearingQuality</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bearingQuality</span><span class="p">:</span> <span class="n"><a href="../Enums/kSITQualityValues.html">kSITQualityValues</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(py)quality"></a>
+                    <a name="//apple_ref/objc/Property/quality" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(py)quality">quality</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return an indicative of quality calculated with accuracy and building size.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only used in indoor.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/kSITQualityValues.html">kSITQualityValues</a></span> <span class="n">quality</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">quality</span><span class="p">:</span> <span class="n"><a href="../Enums/kSITQualityValues.html">kSITQualityValues</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(py)accuracy"></a>
+                    <a name="//apple_ref/objc/Property/accuracy" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(py)accuracy">accuracy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the accuracy radius (in meters).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">accuracy</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">accuracy</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(py)provider"></a>
+                    <a name="//apple_ref/objc/Property/provider" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(py)provider">provider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Multiple providers can create locations.
+This property determines which one has determined the location.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">provider</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(py)deviceId"></a>
+                    <a name="//apple_ref/objc/Property/deviceId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(py)deviceId">deviceId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Identifier of the device that has generated the location</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">deviceId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">deviceId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods"></a>
+                <a name="//apple_ref/objc/Section/Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Methods"></a>
+                  <h3 class="section-name"><p>Methods</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocation(im)hasBearing"></a>
+                    <a name="//apple_ref/objc/Method/-hasBearing" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocation(im)hasBearing">-hasBearing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method that determines if the location has a high-quality bearing</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">hasBearing</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hasBearing</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BOOL Location bearinqQuality is high (YES) or not (NO)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://situm.es" target="_blank" rel="external">Situm Technologies S.L.</a>. All rights reserved. (Last updated: 2021-07-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
