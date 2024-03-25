@@ -1,0 +1,5 @@
+es.situm.maps.library.domain.interceptor
+es.situm.wayfinding
+es.situm.wayfinding.actions
+es.situm.wayfinding.customPoi
+es.situm.wayfinding.navigation

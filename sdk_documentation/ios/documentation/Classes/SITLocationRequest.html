@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SITLocationRequest Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/SITLocationRequest" class="dashAnchor"></a>
+    <a title="SITLocationRequest Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SitumSDK 3.8.5 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SitumSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SITLocationRequest Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SITAngle.html">SITAngle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBeaconFilter.html">SITBeaconFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBuilding.html">SITBuilding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBuildingInfo.html">SITBuildingInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBuildingResource.html">SITBuildingResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCartesianCoordinate.html">SITCartesianCoordinate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCircularArea.html">SITCircularArea</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCommunicationManager.html">SITCommunicationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCoordinateConverter.html">SITCoordinateConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCustomField.html">SITCustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITDimensions.html">SITDimensions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITDirectionsManager.html">SITDirectionsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITDirectionsRequest.html">SITDirectionsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITEnumMapper.html">SITEnumMapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITEvent.html">SITEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITExternalLocation.html">SITExternalLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITFloor.html">SITFloor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITFloorResource.html">SITFloorResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITGeofence.html">SITGeofence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITGeofenceBuilder.html">SITGeofenceBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITIndication.html">SITIndication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocation.html">SITLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocationManager.html">SITLocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocationParametersUpdate.html">SITLocationParametersUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocationRequest.html">SITLocationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITMapView.html">SITMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITMapViewConfiguration.html">SITMapViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITMapViewController.html">SITMapViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITMapViewDirectionsOptions.html">SITMapViewDirectionsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITMultilanguageString.html">SITMultilanguageString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITNavigationManager.html">SITNavigationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITNavigationProgress.html">SITNavigationProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITNavigationRequest.html">SITNavigationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITOccurrence.html">SITOccurrence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITOrganizationTheme.html">SITOrganizationTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITOutdoorLocationOptions.html">SITOutdoorLocationOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPOI.html">SITPOI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPOIBase.html">SITPOIBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPOICategory.html">SITPOICategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPoint.html">SITPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRealTimeData.html">SITRealTimeData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRealTimeManager.html">SITRealTimeManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRealTimeRequest.html">SITRealTimeRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRemoteConfig.html">SITRemoteConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITResource.html">SITResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRoute.html">SITRoute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRouteAdjustment.html">SITRouteAdjustment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRouteSegment.html">SITRouteSegment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRouteStep.html">SITRouteStep</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITServices.html">SITServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITThemeColors.html">SITThemeColors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITTile.html">SITTile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITURL.html">SITURL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SITLocationCalculatingString">SITLocationCalculatingString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SITLocationCompassNeedsCalibrationString">SITLocationCompassNeedsCalibrationString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SITLocationStartedString">SITLocationStartedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SITLocationStoppedString">SITLocationStoppedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SITLocationUserNotInBuildingString">SITLocationUserNotInBuildingString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:SITMapView.h@kSetDirectionsOptionsNotificationName">kSetDirectionsOptionsNotificationName</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SITAccessibilityMode.html">SITAccessibilityMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITDirectionsError.html">SITDirectionsError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITIndoorLocationManagerStates.html">SITIndoorLocationManagerStates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITLocationError.html">SITLocationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITLocationState.html">SITLocationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITNavigationError.html">SITNavigationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITRealTimeError.html">SITRealTimeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITRealtimeUpdateInterval.html">SITRealtimeUpdateInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITTileResource.html">SITTileResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITBackgroundAccuracy.html">kSITBackgroundAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITBuildingDetector.html">kSITBuildingDetector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITIndicationActions.html">kSITIndicationActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITIndicationOrientation.html">kSITIndicationOrientation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITOccurrenceAction.html">kSITOccurrenceAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITQualityValues.html">kSITQualityValues</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITRotationMatrixProvider.html">kSITRotationMatrixProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SITDirectionsDelegate.html">SITDirectionsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITDirectionsInterface.html">SITDirectionsInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITGeofencesDelegate.html">SITGeofencesDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITLocationDelegate.html">SITLocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITLocationInterface.html">SITLocationInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITLocationParametersUpdateBuilder.html">SITLocationParametersUpdateBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITMapViewDelegate.html">SITMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITMapperProtocol.html">SITMapperProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITNavigationDelegate.html">SITNavigationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITNavigationInterface.html">SITNavigationInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITRealTimeDelegate.html">SITRealTimeDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITRealTimeInterface.html">SITRealTimeInterface</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SITBounds.h@T@SITBounds">SITBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SITCartesianCoordinate.h@T@SITCartesianMeters">SITCartesianMeters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SITDirectionsInterface.h@T@SITDirectionsCompletion">SITDirectionsCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SITMapView.h@T@SITMapViewLoadCompletion">SITMapViewLoadCompletion</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/SITBounds.html">SITBounds</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SITLocationRequest</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SITLocationRequest</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSCopying</span><span class="p">,</span> <span class="n"><a href="../Protocols/SITMapperProtocol.html">SITMapperProtocol</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SITLocationRequest</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSCopying</span><span class="p">,</span> <span class="kt"><a href="../Protocols/SITMapperProtocol.html">SITMapperProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A data object that contains parameters for the location service (SITLocationManager)</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/objc/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><span>Initializers</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(im)initWithBuildingId:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithBuildingId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(im)initWithBuildingId:">-initWithBuildingId:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nf">initWithBuildingId</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">buildingId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">buildingId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unique identifier of the building in which you want to locate a user.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Initialized SITLocationRequest object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><span>Properties</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)realtimeUpdateInterval"></a>
+                    <a name="//apple_ref/objc/Property/realtimeUpdateInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)realtimeUpdateInterval">realtimeUpdateInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The time interval indicating how often the position should be uploaded to realtime.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/SITRealtimeUpdateInterval.html">SITRealtimeUpdateInterval</a></span> <span class="n">realtimeUpdateInterval</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">realtimeUpdateInterval</span><span class="p">:</span> <span class="kt"><a href="../Enums/SITRealtimeUpdateInterval.html">SITRealtimeUpdateInterval</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)useDeadReckoning"></a>
+                    <a name="//apple_ref/objc/Property/useDeadReckoning" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)useDeadReckoning">useDeadReckoning</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set if you want to use dead reckoning to get fast position updates using only the inertial sensors,
+between the server position updates. This parameter is incompatible with interval. If interval is
+set, dead reckoning will be deactivated for this request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">useDeadReckoning</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">useDeadReckoning</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)useGps"></a>
+                    <a name="//apple_ref/objc/Property/useGps" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)useGps">useGps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set if you want to use Gps for positioning indoor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">useGps</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">useGps</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)buildingID"></a>
+                    <a name="//apple_ref/objc/Property/buildingID" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)buildingID">buildingID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unique identifier of the building in which you want to locate a user. From SDK version 2.43.0, if this value is not set (it is nil or an empty string), the positioning will start in indoor-outdoor mode, regardless of the value of the deprecated property <code><a href="../Classes/SITLocationRequest.html#/c:objc(cs)SITLocationRequest(py)useGlobalLocation">useGlobalLocation</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">buildingID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">buildingID</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)operationQueue"></a>
+                    <a name="//apple_ref/objc/Property/operationQueue" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)operationQueue">operationQueue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The thread where the location updates will be provided. If not provided, the main thread will be used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSOperationQueue</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">operationQueue</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">operationQueue</span><span class="p">:</span> <span class="kt">OperationQueue</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)options"></a>
+                    <a name="//apple_ref/objc/Property/options" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)options">options</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Additional options to modify the internal operation of the Location provider (private usage only).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">options</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)beaconFilters"></a>
+                    <a name="//apple_ref/objc/Property/beaconFilters" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)beaconFilters">beaconFilters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Custom UUIDs. The system will also scan beacons with the specified UUIDs. Prior to SDK version 2.45.0 these scans were used only to position the user inside a building. From SDK version 2.45.0 on, if Global Location is active, these scans are also used to detect in which building the user is located.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SITBeaconFilter.html">SITBeaconFilter</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">beaconFilters</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">beaconFilters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/SITBeaconFilter.html">SITBeaconFilter</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)interval"></a>
+                    <a name="//apple_ref/objc/Property/interval" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)interval">interval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the desired interval for location updates, in milliseconds. This interval is inexact, the service will try to keep this rate in a &ldquo;best effort&rdquo; way.
+This parameter is incompatible with dead reckoning. If set, dead reckoning will be deactivated for this request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="kt">int</span> <span class="n">interval</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)smallestDisplacement"></a>
+                    <a name="//apple_ref/objc/Property/smallestDisplacement" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)smallestDisplacement">smallestDisplacement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Minimum displacement between location updates</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">smallestDisplacement</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">smallestDisplacement</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)useBarometer"></a>
+                    <a name="//apple_ref/objc/Property/useBarometer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)useBarometer">useBarometer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set if you want to use barometer data for positioning.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">useBarometer</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">useBarometer</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)useCompass"></a>
+                    <a name="//apple_ref/objc/Property/useCompass" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)useCompass">useCompass</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set if you want to use compass sensor for positioning (default to true).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">useCompass</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">useCompass</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)useBle"></a>
+                    <a name="//apple_ref/objc/Property/useBle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)useBle">useBle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set if you want to use bluetooth sensor for positioning (default to true).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">useBle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">useBle</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)outdoorLocationOptions"></a>
+                    <a name="//apple_ref/objc/Property/outdoorLocationOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)outdoorLocationOptions">outdoorLocationOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Object containing several options to configure the indoor/outdoor positioning.
+This parameter will only be read if useGlobalLocation is set to YES</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n"><a href="../Classes/SITOutdoorLocationOptions.html">SITOutdoorLocationOptions</a></span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">outdoorLocationOptions</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">outdoorLocationOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITOutdoorLocationOptions.html">SITOutdoorLocationOptions</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)preloadInfo"></a>
+                    <a name="//apple_ref/objc/Property/preloadInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)preloadInfo">preloadInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value indicating if the floorplan images and the POI categories images for the building should be download to cache while starting positioning.
+Set to YES to preload the images.
+Set to NO to skip that process.
+Default value is YES.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">preloadInfo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">preloadInfo</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)useLocationsCache"></a>
+                    <a name="//apple_ref/objc/Property/useLocationsCache" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)useLocationsCache">useLocationsCache</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Activate to use the location cache. It will smooth dispersion of initial positions on starts that occur shortly after stopping.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">useLocationsCache</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">useLocationsCache</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)routeAdjustment"></a>
+                    <a name="//apple_ref/objc/Property/routeAdjustment" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)routeAdjustment">routeAdjustment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configure to use route adjustment on the location engine.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/SITRouteAdjustment.html">SITRouteAdjustment</a></span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">routeAdjustment</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">routeAdjustment</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITRouteAdjustment.html">SITRouteAdjustment</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods"></a>
+                <a name="//apple_ref/objc/Section/Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Methods"></a>
+                  <h3 class="section-name"><span>Methods</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(im)isValid"></a>
+                    <a name="//apple_ref/objc/Method/-isValid" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(im)isValid">-isValid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check if the request is valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isValid</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isValid</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BOOL value that indicates if the request is valid (YES) or not (NO).</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(im)isUsingGlobalLocation"></a>
+                    <a name="//apple_ref/objc/Method/-isUsingGlobalLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(im)isUsingGlobalLocation">-isUsingGlobalLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check if indoor-outdoor mode is being used. From SDK version 2.43.0, indoor-outdoor mode is activated if  location request, either the deprectated property <code><a href="../Classes/SITLocationRequest.html#/c:objc(cs)SITLocationRequest(py)useGlobalLocation">useGlobalLocation</a></code> is set to YES or <code><a href="../Classes/SITLocationRequest.html#/c:objc(cs)SITLocationRequest(py)buildingID">buildingID</a></code> is not set (it is nil or an empty string).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isUsingGlobalLocation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isUsingGlobalLocation</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BOOL value that indicates if indoor-outdoor mode is being used (YES) or not (NO).</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private"></a>
+                <a name="//apple_ref/objc/Section/Private" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Private"></a>
+                  <h3 class="section-name"><span>Private</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(im)merge:"></a>
+                    <a name="//apple_ref/objc/Method/-merge:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(im)merge:">-merge:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method that combines two location request updating the values of the receiving object with the ones on the  request.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    You should not use this method directly. Insted you can use the method <code>SITCommunicationManager.fetchRemoteConfig(...)</code> or <code>[SITLocationInterface locationManager:didInitiatedWithRequest:]</code> methods.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">SITLocationRequest</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nf">merge</span><span class="p">:(</span><span class="n">SITLocationRequest</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">request</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">merge</span><span class="p">(</span><span class="n">_</span> <span class="nv">request</span><span class="p">:</span> <span class="kt">SITLocationRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">SITLocationRequest</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>new &lsquo;SITLocationRequest` with merged values.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Deprecated"></a>
+                <a name="//apple_ref/objc/Section/Deprecated" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Deprecated"></a>
+                  <h3 class="section-name"><span>Deprecated</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)provider"></a>
+                    <a name="//apple_ref/objc/Property/provider" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)SITLocationRequest(py)provider">provider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Location provider is no longer selectable. Provider will always be kSITInPhoneProvider</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>One of SITLocationProvider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">SITLocationProvider</span> <span class="n">provider</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">SITLocationProvider</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)updateInterval"></a>
+                    <a name="//apple_ref/objc/Property/updateInterval" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)SITLocationRequest(py)updateInterval">updateInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use realtimeUpdateInterval instead</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>The time interval indicating how often the position should be uploaded to realtime. Deprecated, use realtimeUpdateInterval instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">updateInterval</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">updateInterval</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(py)useGlobalLocation"></a>
+                    <a name="//apple_ref/objc/Property/useGlobalLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(py)useGlobalLocation">useGlobalLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set to true if you want to use indoor/outdoor positioning. Deprecated on SDK version 2.43.0. From that version on if <code><a href="../Classes/SITLocationRequest.html#/c:objc(cs)SITLocationRequest(py)buildingID">buildingID</a></code> is not set (it is nil or an empty string), indoor/outdoor positioning will be used, regardless of the value of this variable.</p>
+
+<p>@deprecated v2.43.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">useGlobalLocation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">useGlobalLocation</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(im)initWithPriority:provider:updateInterval:buildingID:operationQueue:options:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithPriority:provider:updateInterval:buildingID:operationQueue:options:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)SITLocationRequest(im)initWithPriority:provider:updateInterval:buildingID:operationQueue:options:">-initWithPriority:<wbr>provider:<wbr>updateInterval:<wbr>buildingID:<wbr>operationQueue:<wbr>options:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use base constructor instead</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Constructor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nf">initWithPriority</span><span class="p">:(</span><span class="n">SITLocationPriority</span><span class="p">)</span><span class="nv">priority</span>
+                                 <span class="nf">provider</span><span class="p">:(</span><span class="n">SITLocationProvider</span><span class="p">)</span><span class="nv">provider</span>
+                           <span class="nf">updateInterval</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">updateInterval</span>
+                               <span class="nf">buildingID</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">buildingID</span>
+                           <span class="nf">operationQueue</span><span class="p">:</span>
+                               <span class="p">(</span><span class="n">NSOperationQueue</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">operationQueue</span>
+                                  <span class="nf">options</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">priority</span><span class="p">:</span> <span class="kt">SITLocationPriority</span><span class="p">,</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">SITLocationProvider</span><span class="p">,</span> <span class="nv">updateInterval</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">buildingID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">operationQueue</span><span class="p">:</span> <span class="kt">OperationQueue</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>priority</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>one of SITLocationPriority</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>provider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>one of SITLocationProvider</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>updateInterval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time interval at which location will be uploaded to realtime</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier of the building in which you want to locate a user. (This property is mandatory).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>operationQueue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the thread where the location updates will be provided. If not provided, the main thread will be used.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>additional options to modify the internal operation of the Location provider (private usage only).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>initialized object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(im)initWithPriority:provider:updateInterval:buildingID:operationQueue:useDeadReckoning:options:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithPriority:provider:updateInterval:buildingID:operationQueue:useDeadReckoning:options:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)SITLocationRequest(im)initWithPriority:provider:updateInterval:buildingID:operationQueue:useDeadReckoning:options:">-initWithPriority:<wbr>provider:<wbr>updateInterval:<wbr>buildingID:<wbr>operationQueue:<wbr>useDeadReckoning:<wbr>options:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use base constructor instead</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Constructor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nf">initWithPriority</span><span class="p">:(</span><span class="n">SITLocationPriority</span><span class="p">)</span><span class="nv">priority</span>
+                                 <span class="nf">provider</span><span class="p">:(</span><span class="n">SITLocationProvider</span><span class="p">)</span><span class="nv">provider</span>
+                           <span class="nf">updateInterval</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">updateInterval</span>
+                               <span class="nf">buildingID</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">buildingID</span>
+                           <span class="nf">operationQueue</span><span class="p">:</span>
+                               <span class="p">(</span><span class="n">NSOperationQueue</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">operationQueue</span>
+                         <span class="nf">useDeadReckoning</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">useDeadReckoning</span>
+                                  <span class="nf">options</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">priority</span><span class="p">:</span> <span class="kt">SITLocationPriority</span><span class="p">,</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">SITLocationProvider</span><span class="p">,</span> <span class="nv">updateInterval</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">buildingID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">operationQueue</span><span class="p">:</span> <span class="kt">OperationQueue</span><span class="p">,</span> <span class="nv">useDeadReckoning</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>priority</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>one of SITLocationPriority</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>provider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>one of SITLocationProvider</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>updateInterval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time interval at which location will be uploaded to realtime</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier of the building in which you want to locate a user. (This property is mandatory).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>operationQueue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the thread where the location updates will be provided. If not provided, the main thread will be used.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>useDeadReckoning</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>determines if dead reckoning should be used</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>additional options to modify the internal operation of the Location provider (private usage only).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>initialized object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITLocationRequest(im)isEqualToLocationRequest:"></a>
+                    <a name="//apple_ref/objc/Method/-isEqualToLocationRequest:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITLocationRequest(im)isEqualToLocationRequest:">-isEqualToLocationRequest:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Compares the receiving locationRequest to another locationRequest</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isEqualToLocationRequest</span><span class="p">:(</span><span class="n">SITLocationRequest</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">aLocationRequest</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isEqual</span><span class="p">(</span><span class="n">to</span> <span class="nv">aLocationRequest</span><span class="p">:</span> <span class="kt">SITLocationRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>aLocationRequest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SITLocationRequest The location Request to compare with the receiver</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if aLocationRequest is equivalent to the receiving locationRequest, otherwise NO.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="https://situm.com" target="_blank" rel="external noopener">Situm Technologies S.L.</a>. All rights reserved. (Last updated: 2024-03-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

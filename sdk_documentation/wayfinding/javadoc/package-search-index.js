@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"es.situm.maps.library.domain.interceptor"},{"l":"es.situm.wayfinding"},{"l":"es.situm.wayfinding.actions"},{"l":"es.situm.wayfinding.customPoi"},{"l":"es.situm.wayfinding.navigation"}]

@@ -1,0 +1,98 @@
+#Generic pages
+/ https://situm.com/en/docs
+/index.html https://situm.com/en/docs
+/pages/legal https://situm.com/es/legal-2
+/pages/legal/index.html https://situm.com/es/legal-2
+/pages/public_funds https://situm.com/en/public-funds
+/pages/public_funds/index.html https://situm.com/en/public-funds
+/pages/support https://situm.com/en
+/pages/support/index.html https://situm.com/en
+/pages/support/faq.html https://situm.com/en/docs
+/pages/rest/authentication https://situm.com/docs/01-introduction-2
+/pages/rest/authentication/index.html https://situm.com/docs/01-introduction-2
+/pages/terminology/index.html https://situm.com/docs/situm-cartography
+/pages/terminology https://situm.com/docs/situm-cartography
+/pages/mobile https://situm.com/docs/01-introduction
+/pages/mobile/index.html https://situm.com/docs/01-introduction
+/pages/wayfinding https://situm.com/docs/01-introduction-requirements-code-examples-and-more
+/pages/wayfinding/index.html https://situm.com/docs/01-introduction-requirements-code-examples-and-more
+/pages/rest https://situm.com/docs/01-introduction-2
+/pages/rest/index.html https://situm.com/docs/01-introduction-2
+
+
+#Android pages
+/pages/mobile/android https://situm.com/docs/01-introduction
+/pages/mobile/android/index.html https://situm.com/docs/01-introduction
+/pages/mobile/android/code_examples.html https://situm.com/docs/01-introduction
+/pages/mobile/android/quick_start_guide.html https://situm.com/docs/02-a-basic-android-app
+/pages/mobile/android/changelog.html https://situm.com/docs/01-android-sdk-changelog
+/pages/mobile/android/using_situm_sdk_background.html https://situm.com/docs/background-execution
+
+
+#IOS pages
+/pages/mobile/ios/index.html https://situm.com/docs/01-introduction
+/pages/mobile/ios https://situm.com/docs/01-introduction
+/pages/mobile/ios/code_examples.html https://situm.com/docs/01-introduction
+/pages/mobile/ios/quick_start_guide.html https://situm.com/docs/02-a-basic-obj-c-ios-app
+/pages/mobile/ios/quick_start_guide_swift.html https://situm.com/docs/03-a-basic-swift-ios-app
+/pages/mobile/ios/changelog.html https://situm.com/docs/ios-sdk-changelog
+/pages/mobile/ios/api_documentation.html https://situm.com/docs/01-introduction
+
+
+#Cordova pages
+/pages/mobile/cordova/index.html https://situm.com/docs/01-introduction
+/pages/mobile/cordova https://situm.com/docs/01-introduction
+/pages/mobile/cordova/code_examples.html https://situm.com/docs/01-introduction
+/pages/mobile/cordova/quick_start_guide.html https://situm.com/docs/04-a-basic-cordova-app
+/pages/mobile/cordova/changelog.html https://situm.com/docs/cordova-sdk-changelog
+
+
+#Reactnative pages
+/pages/mobile/reactnative/index.html https://situm.com/docs/01-introduction
+/pages/mobile/reactnative https://situm.com/docs/01-introduction
+/pages/mobile/reactnative/code_examples.html https://situm.com/docs/01-introduction
+/pages/mobile/reactnative/quick_start_guide.html https://situm.com/docs/05-a-basic-react-native-app
+/pages/mobile/reactnative/changelog.html https://situm.com/docs/react-native-sdk-changelog
+
+#Wayfinding Android pages
+/pages/wayfinding/android https://situm.com/docs/01-introduction-requirements-code-examples-and-more
+/pages/mobile/android/index.html https://situm.com/docs/01-introduction-requirements-code-examples-and-more
+/pages/wayfinding/android/code_examples.html https://situm.com/docs/01-introduction-requirements-code-examples-and-more
+/pages/wayfinding/android/quick_start_guide.html https://situm.com/docs/01-android-quickstart-guide
+/pages/wayfinding/android/changelog.html https://situm.com/docs/01-android-wyf-changelog
+
+#Wayfinding IOS pages
+/pages/wayfinding/ios/index.html https://situm.com/docs/01-introduction-requirements-code-examples-and-more
+/pages/wayfinding/ios https://situm.com/docs/01-introduction-requirements-code-examples-and-more
+/pages/wayfinding/ios/quick_start_guide.html https://situm.com/docs/02-ios-quickstart-guide
+/pages/wayfinding/ios/changelog.html https://situm.com/docs/02-ios-wyf-changelog
+
+#Cordova cordova pages
+/pages/wayfinding/cordova https://situm.com/docs/01-introduction-requirements-code-examples-and-more
+/pages/wayfinding/cordova/index.html https://situm.com/docs/01-introduction-requirements-code-examples-and-more
+/pages/wayfinding/cordova/code_examples.html https://situm.com/docs/01-introduction-requirements-code-examples-and-more
+/pages/wayfinding/cordova/quick_start_guide.html https://situm.com/docs/03-cordova-quickstart-guide
+/pages/wayfinding/cordova/changelog.html https://situm.com/docs/03-cordova-wyf-changelog
+
+#Public API pages
+/pages/rest/authentication.html https://situm.com/docs/01-introduction-2
+/pages/rest/changelog.html https://situm.com/docs/rest-api-changelog
+
+#Zip documentation pages
+/documentation/documentation.zip https://situm.com/docs
+/pages/mobile/android/api_documentation.html https://situm.com/docs
+
+
+#Redirection to en/docs
+/pages/rest/errors.html https://situm.com/en/docs
+/pages/rest/buildings.html https://situm.com/en/docs
+/pages/rest/indoor_pois.html https://situm.com/en/docs
+/pages/rest/areas.html https://situm.com/en/docs
+/pages/rest/geofences.html https://situm.com/en/docs
+/pages/rest/floors.html https://situm.com/en/docs
+/pages/rest/outdoor_pois.html https://situm.com/docs/situm-cartography
+/pages/rest/events.html https://situm.com/en/docs
+/pages/rest/poi_categories.html https://situm.com/en/docs
+/pages/rest/analytics.html https://situm.com/en/docs
+/pages/rest/paths.html https://situm.com/en/docs
+/pages/rest/real_time.html https://situm.com/en/docs

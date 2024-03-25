@@ -1,0 +1,640 @@
+asyncapi: 2.6.0
+info:
+  title: Map viewer - Wayfinding messages
+  version: "0.1.0"
+channels:
+  generic_channel:
+    description: The postMessage channel on which situm actions and events will be produced and consumed.
+    publish:
+      summary: >-
+        Informs about map viewer events for CUD and orther operations over the situm
+        model
+      operationId: cudEventsOverElements
+      # message:
+      #   anyOf:
+      #     - $ref: "#/components/messages/location.update"
+      #     - $ref: "#/components/messages/cartography.select_poi"
+components:
+  messages:
+    # Actions
+    location.update:
+      name: location.update
+      title: INPUT - Update user location
+      summary: |
+        Message to inform our map about a new user position coming from the outside word.
+        The location will be shown on the map with a blue/green dot
+      contentType: application/json
+      payload:
+        allOf:
+          - type: object
+            properties:
+              type:
+                const: "location.update"
+              payload:
+                $ref: "#/components/schemas/location.update"
+    cartography.select_poi:
+      name: cartography.select_poi
+      title: INPUT - Select POI
+      summary: Message sent from outside our map that makes the map to select a poi by its id
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          type:
+            const: "cartography.select_poi"
+          payload:
+            type: object
+            properties:
+              identifier:
+                type: number
+                example: 1234
+                description: The poi ID to select
+    cartography.deselect_poi:
+      name: cartography.deselect_poi
+      title: INPUT - Deselect POI
+      summary: Message sent from outside our map that makes the map to deselect a poi by its id
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          type:
+            const: "cartography.deselect_poi"
+          payload:
+            type: object
+            properties:
+              identifier:
+                type: number
+                example: 1234
+                description: The poi ID to select
+    cartography.select_building:
+      name: cartography.select_building
+      title: INPUT - Select building
+      summary: |
+        Message sent from outsiede our map that makes the map to select a
+        building by its id and change to its first floor
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          type:
+            const: "cartography.select_building"
+          payload:
+            type: object
+            properties:
+              identifier:
+                type: number
+                example: 1234
+                description: The building ID to select
+    cartography.select_floor:
+      name: cartography.select_floor
+      title: INPUT - Select Floor
+      summary: Message sent from outside our map that makes the map to select a floor by its id
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          type:
+            const: "cartography.select_floor"
+          payload:
+            type: object
+            properties:
+              identifier:
+                type: number
+                example: 1234
+                description: The floor ID to select
+    cartography.filter_pois:
+      name: cartography.filter_pois
+      title: INPUT - Filter pois
+      summary: NOT IMPLEMENTED
+    cartography.filter_pois_by_category:
+      name: cartography.filter_pois_by_category
+      title: INPUT - Filter pois by category
+      summary: NOT IMPLEMENTED
+    cartography.poi_category_select:
+      name: cartography.poi_category_select
+      title: INPUT - POI Category select
+      summary: NOT IMPLEMENTED
+    cartography.poi_category_deselect:
+      name: cartography.poi_category_deselect
+      title: INPUT - Poi Category deselect
+      summary: NOT IMPLEMENTED
+    navigation.start:
+      name: navigation.start
+      title: INPUT - Start Navigation
+      summary: Message sent from outside our map that informs the map about the event that navigation will be started. Navigation information will be completed in the subsequent message `navigation.update`.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          type:
+            const: "navigation.start"
+          payload:
+            oneOf:
+              - type: object
+                title: Message to start a navigation from the outside world
+                properties:
+                  navigationTo:
+                    type: number
+                  type:
+                    $ref: "#"
+
+                # navigationRequest:
+                #   type: object
+
+              - type: object
+
+                properties:
+                  indications:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/routeIndication"
+                  to:
+                    $ref: "#/components/schemas/routeNode"
+                    nullable: true
+                  from:
+                    $ref: "#/components/schemas/routeNode"
+                    nullable: true
+                  steps:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/routeStep"
+                  nodes:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/routeNode"
+                  segments:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/routeSegment"
+                  points:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/routeNode"
+                  lastStep:
+                    $ref: "#/components/schemas/routeStep"
+                    nullable: true
+                  firstStep:
+                    $ref: "#/components/schemas/routeStep"
+                    nullable: true
+                  currentStep:
+                    $ref: "#/components/schemas/routeStep"
+                    nullable: true
+                  edges:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/routeStep"
+    navigation.update:
+      name: navigation.update
+      title: INPUT - Update Navigation
+      summary: Message sent from outside our map that informs the map about an updated navigation from its position
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          type:
+            const: "navigation.update"
+          payload:
+            $ref: "#/components/schemas/navigation.update"
+    navigation.stop:
+      name: navigation.stop
+      title: INPUT/OUTPUT - Stop Navigation
+      summary: |
+        NOT IMPLEMENTED. Message sent both from outside the map and sent from the map
+        to outside that asks for the current navigation to stop
+      contentType: application/json
+    navigation.cancel:
+      name: navigation.cancel
+      title: INPUT - Cancel Navigation
+      summary: Message sent from outside the map that makes the map to clears all the navigation information
+      contentType: application/json
+    directions.update:
+      name: directions.update
+      title: INPUT - Update Directions
+      summary: |
+        Message sent from outside the map that informs the map about a new
+        directions object to show the route on the map
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          error:
+            type: string
+          originId:
+            type: number
+          destinationId:
+            type: number
+          indications:
+            type: array
+            items:
+              $ref: "#/components/schemas/routeIndication"
+          steps:
+            type: array
+            items:
+              $ref: "#/components/schemas/routeStep"
+          segments:
+            type: array
+            items:
+              $ref: "#/components/schemas/routeSegment"
+          type:
+            $ref: "#/components/schemas/routeType"
+
+    ui.initial_configuration:
+      name: ui.initial_configuration
+      title: INPUT - Set up initial configuration
+      summary: |
+        Message sent from outside the map that passes parameters for map viewer initialization
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          enablePoiClustering:
+            type: boolean
+            optional: true
+          showPoiNames:
+            type: boolean
+            optional: true
+          minZoom:
+            type: number
+          maxZoom:
+            type: number
+          initialZoom:
+            type: number
+          useDashboardTheme:
+            type: boolean
+          error:
+            type: string
+
+    # Events
+
+    app.map_is_ready:
+      name: app.map_is_ready
+      title: OUTPUT - Map ready
+      summary: Message sent from the map that notifies about its initializacion readiness
+    camera.followed_user:
+      name: camera.followed_user
+      title: OUTPUT - User is being followed
+      summary: NOT IMPLEMENTED. Message sent from the map that notifies that is following the user or not
+      payload:
+        type: boolean
+    cartography.poi_selected:
+      name: cartography.poi_selected
+      title: OUTPUT - POI selected
+      summary: Message sent from the map that notifies that the user has selected a POI
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          idendifier:
+            type: number
+    cartography.poi_deselected:
+      name: cartography.poi_deselected
+      title: OUTPUT - POI deselected
+      summary: Message sent from the map that notifies that the user has deselected a POI
+      contentType: application/json
+      payload:
+        type: number
+        nullable: true
+    cartography.geofence_entered:
+      name: cartography.geofence_entered
+      title: INPUT - Geofence entered
+      summary: NOT IMPLEMENTED.
+    cartography.geofence_exited:
+      name: cartography.geofence_exited
+      title: INPUT - Geofence exited
+      summary: NOT IMPLEMENTED.
+    cartography.building_selected:
+      name: cartography.building_selected
+      title: OUTPUT - Building selected
+      summary: Map viewer notifies the plugin that the user selected a building
+      payload:
+        type: object
+        properties:
+          identifier:
+            type: number
+            nullable: true
+    cartography.floor_selected:
+      name: cartography.floor_selected
+      title: OUTPUT - Floor selected
+      summary: Map viewer notifies the plugin that the user selected a floor
+      payload:
+        type: object
+        properties:
+          identifier:
+            type: number
+            nullable: true
+    cartography.poi_category_selected:
+      name: cartography.poi_category_selected
+      title: OUTPUT - Poi category selected
+      summary: Map viewer notifies the plugin that the user selected a poi category
+      payload:
+        type: object
+        properties:
+          identifier:
+            type: number
+            nullable: true
+    cartography.poi_category_deselected:
+      name: cartography.poi_category_deselected
+      title: OUTPUT - Poi category deselected
+      summary: Map viewer notifies the plugin that the user deselected a poi category
+      payload:
+        type: object
+        properties:
+          identifier:
+            type: number
+            nullable: true
+    directions.requested:
+      name: directions.requested
+      title: OUTPUT - Directions requested
+      summary: Map viewer notifies the plugin that the user deselected a poi category
+      payload:
+        type: object
+        properties:
+          buildingId:
+            type: string
+          originId:
+            type: number
+          destinationId:
+            type: number
+          originCategory:
+            type: string
+          destinationCategory:
+            type: string
+          directionsRequest:
+            $ref: "#/components/schemas/directionsRequest"
+
+    navigation.requested:
+      name: navigation.requested
+      title: OUTPUT - Navigation requested
+      summary: Map viewer notifies the plugin that the user requested a navigation route
+      payload:
+        type: object
+        properties:
+          buildingId:
+            type: string
+          originId:
+            type: number
+          destinationId:
+            type: number
+          originCategory:
+            type: string
+          destinationCategory:
+            type: string
+          directionsRequest:
+            $ref: "#/components/schemas/directionsRequest"
+          navigationRequest:
+            type: object
+            properties:
+              distanceToGoalThreshold:
+                type: number
+              outsideRouteThreshold:
+                type: number
+              distanceToIgnoreFirstIndication:
+                type: number
+              distanceToFloorChangeThreshold:
+                type: number
+              distanceToChangeIndicationThreshold:
+                type: number
+              indicationsInterval:
+                type: number
+              timeToFirstIndication:
+                type: number
+              roundIndicationsStep:
+                type: number
+              timeToIgnoreUnexpectedFloorChanges:
+                type: number
+              ignoreLowQualityLocations:
+                type: boolean
+
+    navigation.stopped:
+      name: navigation.stopped
+      title: OUTPUT - Navigation stopped
+      summary: Map viewer notifies the plugin that the user requested a navigation route
+
+  schemas:
+    eventNotification:
+      type: object
+      properties:
+        type:
+          description: microservice that sends it
+          type: string
+          enum:
+            - camera.follow_user
+            - cartography.select_poi
+            - cartography.deselect_poi
+            - cartography.select_building
+            - cartography.select_floor
+            - cartography.filter_pois
+            - cartography.filter_pois_by_category
+            - cartography.poi_category_select
+            - cartography.poi_category_deselect
+            - navigation.update
+            - navigation.start
+            - navigation.stop
+            - navigation.cancel
+            - directions.update
+            - location.update
+            - ui.initial_configuration
+            - app.map_is_ready
+            - camera.followed_user
+            - cartography.poi_selected
+            - cartography.poi_deselected
+            - cartography.geofence_entered
+            - cartography.geofence_exited
+            - cartography.building_selected
+            - cartography.floor_selected
+            - cartography.poi_category_selected
+            - cartography.poi_category_deselected
+            - directions.requested
+            - navigation.requested
+            - navigation.stopped
+    location.update:
+      type: object
+      properties:
+        cartesianCoordinate:
+          type: object
+          properties:
+            x:
+              type: number
+            y:
+              type: number
+        coordinate:
+          type: object
+          properties:
+            latitude:
+              type: number
+            longitude:
+              type: number
+        deviceId:
+          type: number
+        buildingIdentifier:
+          type: number
+          description: -1 if not defined
+        floorIdentifier:
+          type: number
+        isIndoor:
+          type: boolean
+        isOutdoor:
+          type: boolean
+        accuracy:
+          type: number
+          description: In meters
+          example: 0.2
+        bearing:
+          type: object
+          properties:
+            degress:
+              type: number
+            degreesClockwise:
+              type: number
+            radians:
+              type: number
+            radiansMinusPiPi:
+              type: number
+        bearingQuality:
+          type: string
+          enum:
+            - HIGH
+        hasBearing:
+          type: boolean
+        status:
+          type: string
+          enum:
+            # - AUTO_ENABLE_BLE_FORBIDDEN
+            # - BLE_NOT_AVAILABLE
+            # - BLE_SENSOR_DISABLED_BY_USER
+            - CALCULATING
+            # - COMPASS_CALIBRATION_NEEDED
+            # - COMPASS_CALIBRATION_NOT_NEEDED
+            # - GEOFENCES_NOT_AVAILABLE
+            # - GLOBAL_LOCATION_NOT_FOUND
+            # - LOCATION_DISABLED
+            # - NO_CONNECTION # Deprecated
+            # - PREPARING_POSITIONING_MODEL
+            # - PROCESSING_POSITIONING_MODEL
+            # - RETRY_DOWNLOAD_POSITIONING_MODEL
+            # - START_DOWNLOADING_POSITIONING_MODEL
+            - STARTING
+            # - STARTING_POSITIONING
+            - STOPPED
+            # - TIME_SETTINGS_MANUAL
+            - USER_NOT_IN_BUILDING
+            # - WIFI_SCAN_THROTTLED
+    navigation.update:
+      type: object
+      properties:
+        steps:
+          type: array
+          items:
+            $ref: "#/components/schemas/routeStep"
+        indications:
+          type: array
+          items:
+            $ref: "#/components/schemas/routeIndication"
+        segments:
+          type: array
+          items:
+            $ref: "#/components/schemas/routeSegment"
+        distanceToGoal:
+          type: number
+        routeStep:
+          $ref: "#/components/schemas/routeStep"
+        type:
+          type: string
+          enum:
+            - STARTING
+            - STARTED
+            - STOPPED
+            - PROGRESS
+            - OUT_OF_ROUTE
+            - CALCULATING
+            - DESTINATION_REACHED
+    routeType:
+      type: string
+      enum:
+        - CHOOSE_SHORTEST
+        - ONLY_ACCESSIBLE
+        - ONLY_NOT_ACCESIBLE_FLOOR_CHANGES
+    routeNode:
+      type: object
+      properties:
+        isIndoor:
+          type: boolean
+        isOutdoor:
+          type: boolean
+        coordinate:
+          type: object
+          properties:
+            latitude:
+              type: number
+            longitude:
+              type: number
+        cartesianCoordinate:
+          type: object
+          properties:
+            x:
+              type: number
+            y:
+              type: number
+        floorIdentifier:
+          type: string
+        buildingIdentifier:
+          type: string
+    routeStep:
+      type: object
+      properties:
+        isLast:
+          type: boolean
+        isFirst:
+          type: boolean
+        to:
+          $ref: "#/components/schemas/routeNode"
+        from:
+          $ref: "#/components/schemas/routeNode"
+        id:
+          type: number
+        distanceToGoal:
+          type: number
+        distance:
+          type: number
+    routeIndication:
+      type: object
+      properties:
+        humanReadableMessage:
+          type: string
+        stepIdxOrigin:
+          type: number
+        stepIdxDestination:
+          type: number
+        distance:
+          type: number
+        orientation:
+          type: number
+        neededLevelChange:
+          type: boolean
+        distanceToNextLevel:
+          type: number
+        orientationType:
+          type: string
+        indicationType:
+          type: string
+    routeSegment:
+      type: object
+      properties:
+        floorIdentifier:
+          type: string
+        points:
+          $ref: "#/components/schemas/routeNode"
+    directionsRequest:
+      type: object
+      properties:
+        from:
+          $ref: "#/components/schemas/routeNode"
+        to:
+          $ref: "#/components/schemas/routeNode"
+        bearingFrom:
+          type: object
+          properties:
+            radians:
+              type: number
+        accessibilityMode:
+          $ref: "#/components/schemas/routeType"

@@ -1,0 +1,64 @@
+<h3><a name="swift_examples"></a> Swift Examples</h3>
+
+<p>In this section you&rsquo;ll find the equivalents to the previous Objective C snippets written in Swift.</p>
+
+<h5>Set API Key</h5>
+
+<ul>
+<li>Using your email address and APIKEY.</li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">SITServices</span><span class="o">.</span><span class="nf">provideAPIKey</span><span class="p">(</span><span class="s">"SET YOUR APIKEY HERE"</span><span class="p">,</span> <span class="nv">forEmail</span><span class="p">:</span> <span class="s">"SET YOUR EMAIL HERE"</span><span class="p">)</span>
+</code></pre>
+<ul>
+<li>Using your user and password.</li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">SITServices</span><span class="o">.</span><span class="nf">provideUser</span><span class="p">(</span><span class="s">"SET YOUR USER HERE"</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="s">"SET YOUR PASSWORD HERE"</span><span class="p">)</span>
+</code></pre>
+<h5>Download your buildings</h5>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sharedManager</span><span class="p">:</span> <span class="kt">SITCommunicationManager</span> <span class="o">=</span> <span class="kt">SITCommunicationManager</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span>
+
+<span class="n">sharedManager</span><span class="o">.</span><span class="nf">fetchBuildings</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="nv">mapping</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
+          <span class="k">var</span> <span class="nv">buildings</span><span class="p">:</span> <span class="kt">NSArray</span> <span class="o">=</span> <span class="n">mapping</span><span class="o">!</span><span class="p">[</span><span class="s">"results"</span><span class="p">]</span> <span class="k">as!</span> <span class="kt">NSArray</span>
+    <span class="p">},</span> <span class="nv">failure</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="k">in</span>
+        <span class="c1">// Handle error accordingly</span>
+    <span class="p">})</span>
+</code></pre>
+<h5>Download building data</h5>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">building</span><span class="p">:</span> <span class="kt">SITBuilding</span> <span class="o">=</span> <span class="n">buildings</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">as!</span> <span class="kt">SITBuilding</span>
+
+<span class="k">self</span><span class="o">.</span><span class="n">sharedManager</span><span class="o">.</span><span class="nf">fetchBuildingInfo</span><span class="p">(</span><span class="k">self</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">identifier</span><span class="p">,</span> <span class="nv">withOptions</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="nv">mapping</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
+
+        <span class="k">var</span> <span class="nv">buildingInfo</span><span class="p">:</span> <span class="kt">SITBuildingInfo</span> <span class="o">=</span> <span class="n">mapping</span><span class="o">!</span><span class="p">[</span><span class="s">"results"</span><span class="p">]</span> <span class="k">as!</span> <span class="kt">SITBuildingInfo</span>
+
+    <span class="p">},</span> <span class="nv">failure</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="k">in</span>
+        <span class="c1">// Handle error accordingly</span>
+    <span class="p">})</span>
+</code></pre>
+<h5>Activate the positioning</h5>
+
+<ul>
+<li>Conform to the SITLocationDelegate and implement it&rsquo;s methods</li>
+</ul>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">locationManager</span><span class="p">:</span> <span class="kt">SITLocationInterface</span><span class="p">,</span> <span class="n">didUpdate</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">SITLocation</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Handle location update</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">locationManager</span><span class="p">:</span> <span class="kt">SITLocationInterface</span><span class="p">,</span> <span class="n">didFailWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Handle error</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">locationManager</span><span class="p">:</span> <span class="kt">SITLocationInterface</span><span class="p">,</span> <span class="n">didUpdate</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">SITLocationState</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Handle location manager state</span>
+<span class="p">}</span>
+</code></pre>
+<ul>
+<li>Initiate the indoor positioning on a certain building.</li>
+</ul>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sharedLocationManager</span><span class="p">:</span> <span class="kt">SITLocationManager</span> <span class="o">=</span> <span class="kt">SITLocationManager</span><span class="o">.</span><span class="nf">sharedInstance</span><span class="p">()</span>
+
+<span class="n">sharedLocationManager</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+
+<span class="k">let</span> <span class="nv">request</span><span class="p">:</span> <span class="kt">SITLocationRequest</span> <span class="o">=</span> <span class="kt">SITLocationRequest</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">priority</span><span class="p">:</span> <span class="kt">SITLocationPriority</span><span class="o">.</span><span class="n">highAccuracy</span><span class="p">,</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">SITLocationProvider</span><span class="o">.</span><span class="n">hybridProvider</span><span class="p">,</span> <span class="nv">updateInterval</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">buildingID</span><span class="p">:</span> <span class="n">building</span><span class="o">.</span><span class="n">identifier</span><span class="o">!</span><span class="p">,</span> <span class="nv">operationQueue</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+
+<span class="n">sharedLocationManager</span><span class="o">.</span><span class="nf">requestLocationUpdates</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</code></pre>

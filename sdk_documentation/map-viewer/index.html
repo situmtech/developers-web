@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@asyncapi/react-component@1.0.0-next.47/styles/default.min.css"
+    />
+    <style>
+      body {
+        color: #121212;
+        background-color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+          segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
+          arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body x-timestamp="${Date.now()}">
+    <div id="asyncapi"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@asyncapi/react-component@1.0.0-next.47/browser/standalone/index.js"></script>
+    <script>
+      var asyncapiBasepath = "./";
+      var asyncapiWebviewUri = "./integration-messages.yaml";
+
+      AsyncApiStandalone.render(
+        {
+          schema: {
+            url: `${asyncapiWebviewUri}`,
+            options: { method: "GET", mode: "cors" },
+          },
+          config: {
+            show: {
+              sidebar: true,
+              errors: true,
+            },
+            // parserOptions: { path: `${asyncapiBasePath}` },
+          },
+        },
+        document.getElementById("asyncapi")
+      );
+    </script>
+  </body>
+</html>

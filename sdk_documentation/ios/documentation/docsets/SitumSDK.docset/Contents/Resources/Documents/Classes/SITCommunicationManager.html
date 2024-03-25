@@ -1,0 +1,2633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SITCommunicationManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/SITCommunicationManager" class="dashAnchor"></a>
+    <a title="SITCommunicationManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SitumSDK 3.8.5 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SitumSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SITCommunicationManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SITAngle.html">SITAngle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBeaconFilter.html">SITBeaconFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBuilding.html">SITBuilding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBuildingInfo.html">SITBuildingInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITBuildingResource.html">SITBuildingResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCartesianCoordinate.html">SITCartesianCoordinate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCircularArea.html">SITCircularArea</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCommunicationManager.html">SITCommunicationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCoordinateConverter.html">SITCoordinateConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITCustomField.html">SITCustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITDimensions.html">SITDimensions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITDirectionsManager.html">SITDirectionsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITDirectionsRequest.html">SITDirectionsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITEnumMapper.html">SITEnumMapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITEvent.html">SITEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITExternalLocation.html">SITExternalLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITFloor.html">SITFloor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITFloorResource.html">SITFloorResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITGeofence.html">SITGeofence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITGeofenceBuilder.html">SITGeofenceBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITIndication.html">SITIndication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocation.html">SITLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocationManager.html">SITLocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocationParametersUpdate.html">SITLocationParametersUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITLocationRequest.html">SITLocationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITMapView.html">SITMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITMapViewConfiguration.html">SITMapViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITMapViewController.html">SITMapViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITMapViewDirectionsOptions.html">SITMapViewDirectionsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITMultilanguageString.html">SITMultilanguageString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITNavigationManager.html">SITNavigationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITNavigationProgress.html">SITNavigationProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITNavigationRequest.html">SITNavigationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITOccurrence.html">SITOccurrence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITOrganizationTheme.html">SITOrganizationTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITOutdoorLocationOptions.html">SITOutdoorLocationOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPOI.html">SITPOI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPOIBase.html">SITPOIBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPOICategory.html">SITPOICategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITPoint.html">SITPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRealTimeData.html">SITRealTimeData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRealTimeManager.html">SITRealTimeManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRealTimeRequest.html">SITRealTimeRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRemoteConfig.html">SITRemoteConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITResource.html">SITResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRoute.html">SITRoute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRouteAdjustment.html">SITRouteAdjustment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRouteSegment.html">SITRouteSegment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITRouteStep.html">SITRouteStep</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITServices.html">SITServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITThemeColors.html">SITThemeColors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITTile.html">SITTile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SITURL.html">SITURL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SITLocationCalculatingString">SITLocationCalculatingString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SITLocationCompassNeedsCalibrationString">SITLocationCompassNeedsCalibrationString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SITLocationStartedString">SITLocationStartedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SITLocationStoppedString">SITLocationStoppedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SITLocationUserNotInBuildingString">SITLocationUserNotInBuildingString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:SITMapView.h@kSetDirectionsOptionsNotificationName">kSetDirectionsOptionsNotificationName</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SITAccessibilityMode.html">SITAccessibilityMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITDirectionsError.html">SITDirectionsError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITIndoorLocationManagerStates.html">SITIndoorLocationManagerStates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITLocationError.html">SITLocationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITLocationState.html">SITLocationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITNavigationError.html">SITNavigationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITRealTimeError.html">SITRealTimeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITRealtimeUpdateInterval.html">SITRealtimeUpdateInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SITTileResource.html">SITTileResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITBackgroundAccuracy.html">kSITBackgroundAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITBuildingDetector.html">kSITBuildingDetector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITIndicationActions.html">kSITIndicationActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITIndicationOrientation.html">kSITIndicationOrientation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITOccurrenceAction.html">kSITOccurrenceAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITQualityValues.html">kSITQualityValues</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kSITRotationMatrixProvider.html">kSITRotationMatrixProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SITDirectionsDelegate.html">SITDirectionsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITDirectionsInterface.html">SITDirectionsInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITGeofencesDelegate.html">SITGeofencesDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITLocationDelegate.html">SITLocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITLocationInterface.html">SITLocationInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITLocationParametersUpdateBuilder.html">SITLocationParametersUpdateBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITMapViewDelegate.html">SITMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITMapperProtocol.html">SITMapperProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITNavigationDelegate.html">SITNavigationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITNavigationInterface.html">SITNavigationInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITRealTimeDelegate.html">SITRealTimeDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SITRealTimeInterface.html">SITRealTimeInterface</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SITBounds.h@T@SITBounds">SITBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SITCartesianCoordinate.h@T@SITCartesianMeters">SITCartesianMeters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SITDirectionsInterface.h@T@SITDirectionsCompletion">SITDirectionsCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:SITMapView.h@T@SITMapViewLoadCompletion">SITMapViewLoadCompletion</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/SITBounds.html">SITBounds</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SITCommunicationManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SITCommunicationManager</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SITCommunicationManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>The Communication manager allows you to make asynchronous requests to the server, mostly to fetch data.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/objc/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><span>Initializers</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(cm)sharedManager"></a>
+                    <a name="//apple_ref/objc/Method/+sharedManager" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(cm)sharedManager">+sharedManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this method to receive a reference to an initialized object of this class</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    You should not try to initialize multiple objects of this class using alloc:init because it would result in unexpected behaviour.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">sharedManager</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">shared</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The shared manager object. Initially, this method stablish a value of 24 hours as the CAHCE_MAX_AGE for the cache system.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods"></a>
+                <a name="//apple_ref/objc/Section/Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Methods"></a>
+                  <h3 class="section-name"><span>Methods</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)cacheDate"></a>
+                    <a name="//apple_ref/objc/Method/-cacheDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)cacheDate">-cacheDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the time when data on cache was retrieved</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSDate</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="n">cacheDate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cacheDate</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the date when the information was successfully fetched or nil if there is not cache.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)setCacheMaxAge:"></a>
+                    <a name="//apple_ref/objc/Method/-setCacheMaxAge:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)setCacheMaxAge:">-setCacheMaxAge:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Establish the time when the stored data on cache expires</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCacheMaxAge</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">cacheMaxAge</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setCacheMaxAge</span><span class="p">(</span><span class="n">_</span> <span class="nv">cacheMaxAge</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cacheMaxAge</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Integer value in seconds. If a negative value is inserted, a value of 0 will be established.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)cacheMaxAge"></a>
+                    <a name="//apple_ref/objc/Method/-cacheMaxAge" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)cacheMaxAge">-cacheMaxAge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the value when the stored data on cache expires.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="n">cacheMaxAge</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cacheMaxAge</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Integer value in seconds.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)clearCache"></a>
+                    <a name="//apple_ref/objc/Method/-clearCache" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)clearCache">-clearCache</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Clear the contents of the cache for a particular user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">clearCache</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clearCache</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)prefetchPositioningInfoForBuildings:withOptions:withCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-prefetchPositioningInfoForBuildings:withOptions:withCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)prefetchPositioningInfoForBuildings:withOptions:withCompletion:">-prefetchPositioningInfoForBuildings:<wbr>withOptions:<wbr>withCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Download all the necessary information to start positioning. This includes <code><a href="../Classes/SITBuilding.html">SITBuilding</a></code>, <code><a href="../Classes/SITBuildingInfo.html">SITBuildingInfo</a></code> and the building&rsquo;s model.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Valid options for this method are:</p>
+
+<ul>
+<li>SITForceRequestKey. Boolean value indicating if request will be directed to the network system directly (YES) without checking the cache system or the request should check cache first (NO) before going to network</li>
+<li>SITPreloadImagesKey Boolean value indicating if the POI category and floorplans images should be preload to caché</li>
+</ul>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">prefetchPositioningInfoForBuildings</span><span class="p">:</span>
+            <span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">buildingIdentifiers</span>
+                                <span class="nf">withOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                             <span class="nf">withCompletion</span><span class="p">:</span>
+                                 <span class="p">(</span><span class="n">SITPrefetchHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">prefetchPositioningInfo</span><span class="p">(</span><span class="n">forBuildings</span> <span class="nv">buildingIdentifiers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?,</span> <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">withCompletion</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITPrefetchHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingIdentifiers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List of identifiers of the buildings which information should be prefetched. Can be nil. If nil, all the buildings of this account would be prefetched.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>additional parameters to customize the internal operation of the method declared in <code>SITCommunicationConstants</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be performed after the operation has been completed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BOOL value indicating if the operation will be performed or not</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchCategoriesWithOptions:withCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchCategoriesWithOptions:withCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchCategoriesWithOptions:withCompletion:">-fetchCategoriesWithOptions:<wbr>withCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the information of the available categories</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Valid options for this method are:
+
+<ul>
+<li>SITForceRequestKey. Boolean value indicating if request will be directed to the network system directly (YES) without checking the cache system or the request should check cache first (NO) before going to network</li>
+<li>SITPreloadImagesKey Boolean value indicating if the POI category images should be preload to caché</li>
+</ul>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">fetchCategoriesWithOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                    <span class="nf">withCompletion</span><span class="p">:</span>
+                        <span class="p">(</span><span class="n">SITPOICategoriesFetchHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchCategories</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">withCompletion</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITPOICategoriesFetchHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>additional parameters to customize the internal operation of the method declared in SITCommunicationConstants.h</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be performed after the operation has been completed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BOOL value indicating if the operation will be performed or not</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchFloorsForBuilding:withOptions:success:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchFloorsForBuilding:withOptions:success:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchFloorsForBuilding:withOptions:success:failure:">-fetchFloorsForBuilding:<wbr>withOptions:<wbr>success:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the list of floors associated with a building</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Keys of the options dictionary:
+       - SITForceRequestKey boolean value that determines if the operation should hit the server (YES) or the cachesystem (NO)
+       - SITPreloadImagesKey Boolean value indicating if the building floorplans images should be preload to caché
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span>
+    <span class="nf">fetchFloorsForBuilding</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">buildingIdentifier</span>
+               <span class="nf">withOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                   <span class="nf">success</span><span class="p">:(</span><span class="n">SITSuccessHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">success</span>
+                   <span class="nf">failure</span><span class="p">:(</span><span class="n">SITFailureCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchFloors</span><span class="p">(</span><span class="n">forBuilding</span> <span class="nv">buildingIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITSuccessHandler</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITFailureCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier of the building</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>parameters that modify the internal behaviour</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation has successfully been performed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation fails</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>error that describes why the operation could not be executed (a nil value means the request is valid and will be executed)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchTilesForBuilding:success:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchTilesForBuilding:success:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchTilesForBuilding:success:failure:">-fetchTilesForBuilding:<wbr>success:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Download a given building tiles. Not all the buildings have tiles available to be downloaded.
+ If the tiles are available, a zip file is downloaded and unzipped in the user Library path for application
+ We use tiles supported by google maps <a href="https://developers.google.com/maps/documentation/ios-sdk/tiles">https://developers.google.com/maps/documentation/ios-sdk/tiles</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span>
+    <span class="nf">fetchTilesForBuilding</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">buildingIdentifier</span>
+                  <span class="nf">success</span><span class="p">:(</span><span class="n">SITSuccessHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">success</span>
+                  <span class="nf">failure</span><span class="p">:(</span><span class="n">SITFailureCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchTiles</span><span class="p">(</span><span class="n">forBuilding</span> <span class="nv">buildingIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITSuccessHandler</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITFailureCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier of the building</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation has successfully been performed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation fails</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Error when success or failure callback are not supplied, nil otherwise</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)getTileForBuilding:floorIdentifier:x:y:z:"></a>
+                    <a name="//apple_ref/objc/Method/-getTileForBuilding:floorIdentifier:x:y:z:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)getTileForBuilding:floorIdentifier:x:y:z:">-getTileForBuilding:<wbr>floorIdentifier:<wbr>x:<wbr>y:<wbr>z:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a specific SITTile for a building with buildingIdentifier at the floor specified in floorIdentifier
+  with coordinates x,y at the zoom level z. This SITTile could be either a tile stored in user Library path or a url
+  to fetch the tile</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Classes/SITTile.html">SITTile</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nf">getTileForBuilding</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">buildingIdentifier</span>
+                        <span class="nf">floorIdentifier</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">floorIdentifier</span>
+                                      <span class="nf">x</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">x</span>
+                                      <span class="nf">y</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">y</span>
+                                      <span class="nf">z</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">z</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTileForBuilding</span><span class="p">(</span><span class="n">_</span> <span class="nv">buildingIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">floorIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">z</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SITTile.html">SITTile</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier of the building</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>floorIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>x</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>x coordinate of the tile</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>y</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>y coordinate of the tile</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>z</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>level of zoom of the tile</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>SITTile with the information of the tile for zoom z and coordinates x,y</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)clearTiles"></a>
+                    <a name="//apple_ref/objc/Method/-clearTiles" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)clearTiles">-clearTiles</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invalidate all tiles resources</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">clearTiles</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clearTiles</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchRealTimeUsersForBuilding:withOptions:success:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchRealTimeUsersForBuilding:withOptions:success:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchRealTimeUsersForBuilding:withOptions:success:failure:">-fetchRealTimeUsersForBuilding:<wbr>withOptions:<wbr>success:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the list of users positioning in the building</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Keys of the options dictionary: forceRequest boolean value that determines if the operation should hit the server (YES) or the cachesystem (NO)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span>
+    <span class="nf">fetchRealTimeUsersForBuilding</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">buildingIdentifier</span>
+                      <span class="nf">withOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                          <span class="nf">success</span><span class="p">:(</span><span class="n">SITSuccessHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">success</span>
+                          <span class="nf">failure</span><span class="p">:(</span><span class="n">SITFailureCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchRealTimeUsers</span><span class="p">(</span><span class="n">forBuilding</span> <span class="nv">buildingIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITSuccessHandler</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITFailureCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier of the building</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>parameters that modify the internal behaviour</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation has successfully been performed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation fails</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>error that describes why the operation could not be executed (a nil value means the request is valid and will be executed)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchBuildingsWithOptions:success:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchBuildingsWithOptions:success:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchBuildingsWithOptions:success:failure:">-fetchBuildingsWithOptions:<wbr>success:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the list of buildings</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Keys of the options dictionary: forceRequest boolean value that determines if the operation should hit the server (YES) or the cachesystem (NO)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span>
+    <span class="nf">fetchBuildingsWithOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                      <span class="nf">success</span><span class="p">:(</span><span class="n">SITSuccessHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">success</span>
+                      <span class="nf">failure</span><span class="p">:(</span><span class="n">SITFailureCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchBuildings</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITSuccessHandler</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITFailureCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>parameters that modify the internal behaviour</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation has successfully been performed. Information can be accessed through the results key on the mapping result dictionary</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation fails with an error describing what has failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>error that describes why the operation could not be executed (a nil value means the request is valid and will be executed)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchPoisOfBuilding:withOptions:success:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchPoisOfBuilding:withOptions:success:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchPoisOfBuilding:withOptions:success:failure:">-fetchPoisOfBuilding:<wbr>withOptions:<wbr>success:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the list of indoor points of interest associated with a building</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Keys of the options dictionary: forceRequest boolean value that determines if the operation should hit the server (YES) or the cachesystem (NO)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">fetchPoisOfBuilding</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">buildingIdentifier</span>
+                              <span class="nf">withOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                                  <span class="nf">success</span><span class="p">:(</span><span class="n">SITSuccessHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">success</span>
+                                  <span class="nf">failure</span><span class="p">:</span>
+                                      <span class="p">(</span><span class="n">SITFailureCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchPois</span><span class="p">(</span><span class="n">ofBuilding</span> <span class="nv">buildingIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITSuccessHandler</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITFailureCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier of the building</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>parameters that modify the internal behaviour (see discussion section)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation has successfully been performed. Information can be accessed through the results key on the mapping result dictionary</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation fails with an error describing what has failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>error that describes why the operation could not be executed (a nil value means the request is valid and will be executed)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchIndoorPoi:ofBuilding:withOptions:success:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchIndoorPoi:ofBuilding:withOptions:success:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchIndoorPoi:ofBuilding:withOptions:success:failure:">-fetchIndoorPoi:<wbr>ofBuilding:<wbr>withOptions:<wbr>success:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve a single indoor point of interest associated with a building an identified by an id.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Keys of the options dictionary: forceRequest boolean value that determines if the operation should hit the server (YES) or the cachesystem (NO)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">fetchIndoorPoi</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">poiIdentifier</span>
+                          <span class="nf">ofBuilding</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">buildingIdentifier</span>
+                         <span class="nf">withOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                             <span class="nf">success</span><span class="p">:(</span><span class="n">SITSuccessHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">success</span>
+                             <span class="nf">failure</span><span class="p">:(</span><span class="n">SITFailureCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchIndoorPoi</span><span class="p">(</span><span class="n">_</span> <span class="nv">poiIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">ofBuilding</span> <span class="nv">buildingIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITSuccessHandler</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITFailureCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>poiIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier of the point of interest</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier of the building</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>parameters that modify the internal behaviour (see discussion section)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation has successfully been performed. Information can be accessed through the results key on the mapping result dictionary</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation fails with an error describing what has failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>error that describes why the operation could not be executed (a nil value means the request is valid and will be executed)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchOutdoorPoisOfBuilding:withOptions:success:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchOutdoorPoisOfBuilding:withOptions:success:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchOutdoorPoisOfBuilding:withOptions:success:failure:">-fetchOutdoorPoisOfBuilding:<wbr>withOptions:<wbr>success:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the list of outdoor points of interest associated with a building</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Keys of the options dictionary: forceRequest boolean value that determines if the operation should hit the server (YES) or the cachesystem (NO)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span>
+    <span class="nf">fetchOutdoorPoisOfBuilding</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">buildingIdentifier</span>
+                   <span class="nf">withOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                       <span class="nf">success</span><span class="p">:(</span><span class="n">SITSuccessHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">success</span>
+                       <span class="nf">failure</span><span class="p">:(</span><span class="n">SITFailureCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchOutdoorPois</span><span class="p">(</span><span class="n">ofBuilding</span> <span class="nv">buildingIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITSuccessHandler</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITFailureCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier of the building</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>parameters that modify the internal behaviour (see discussion section)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation has successfully been performed. Information can be accessed through the results key on the mapping result dictionary</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation fails with an error describing what has failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>error that describes why the operation could not be executed (a nil value means the request is valid and will be executed)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchBuildingInfo:withOptions:success:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchBuildingInfo:withOptions:success:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchBuildingInfo:withOptions:success:failure:">-fetchBuildingInfo:<wbr>withOptions:<wbr>success:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the information of a building.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Keys of the options dictionary:
+           - SITForceRequestKey boolean value that determines if the operation should hit the server (YES) or the cachesystem (NO)
+           - SITPreloadImagesKey Boolean value indicating if the building floorplans images should be preload to caché
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">fetchBuildingInfo</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">buildingIdentifier</span>
+                            <span class="nf">withOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                                <span class="nf">success</span><span class="p">:(</span><span class="n">SITSuccessHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">success</span>
+                                <span class="nf">failure</span><span class="p">:(</span><span class="n">SITFailureCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchBuildingInfo</span><span class="p">(</span><span class="n">_</span> <span class="nv">buildingIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITSuccessHandler</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITFailureCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buildingIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unique identifier of the building.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>parameters that modify the internal behaviour (see discussion section)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation has successfully been performed. Information can be accessed through the results key on the mapping result dictionary</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>failure the kind of block that will be executed when the operation fails with an error describing what has failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>error that describes why the operation could not be executed (a nil value means the request is valid and will be executed)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchMapFromFloor:withCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchMapFromFloor:withCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchMapFromFloor:withCompletion:">-fetchMapFromFloor:<wbr>withCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the floorplan of a floor</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">fetchMapFromFloor</span><span class="p">:(</span><span class="n"><a href="../Classes/SITFloor.html">SITFloor</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">floor</span>
+           <span class="nf">withCompletion</span><span class="p">:(</span><span class="n">SITImageFetchHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">imageFetchHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchMap</span><span class="p">(</span><span class="n">from</span> <span class="nv">floor</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITFloor.html">SITFloor</a></span><span class="p">,</span> <span class="n">withCompletion</span> <span class="nv">imageFetchHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITImageFetchHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>floor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SITFloor object</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>imageFetchHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation has successfully been performed (a nil data would mean the operation has failed)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>return false when imageFetchHandler is nil</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchSelected:iconForCategory:withCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchSelected:iconForCategory:withCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchSelected:iconForCategory:withCompletion:">-fetchSelected:<wbr>iconForCategory:<wbr>withCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the contents of an icon of a category</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">fetchSelected</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">selected</span>
+      <span class="nf">iconForCategory</span><span class="p">:(</span><span class="n"><a href="../Classes/SITPOICategory.html">SITPOICategory</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">category</span>
+       <span class="nf">withCompletion</span><span class="p">:(</span><span class="n">SITPOICategoryIconFetchCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchSelected</span><span class="p">(</span><span class="n">_</span> <span class="nv">selected</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">iconFor</span> <span class="nv">category</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITPOICategory.html">SITPOICategory</a></span><span class="p">,</span> <span class="n">withCompletion</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITPOICategoryIconFetchCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selected</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>BOOL parameter indicating the kind of icon to retrieve (YES means the selected one, NO means the regular or normal one)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>category</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SITPOICategory object. Normally you do not instantiate objects of this class, instead you should use the one obtained by -fetchCategoriesWithCompletion:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of callback that will be called after the operation has been completed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BOOL value indicating if the operation is well formed and if it will be executed (YES) or not (NO)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchEventsFromBuilding:withOptions:withCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchEventsFromBuilding:withOptions:withCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchEventsFromBuilding:withOptions:withCompletion:">-fetchEventsFromBuilding:<wbr>withOptions:<wbr>withCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the events of a SITBuilding</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Valid options for this method are: SITForceRequestKey. The value of this key is a NSNumber with a bool value on it. The value of YES means that the request will be directed to the network system directly without checking the cache system. The value of NO means the request will be directed to the cache system and if not found it will be redirected to the network system.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">fetchEventsFromBuilding</span><span class="p">:(</span><span class="n"><a href="../Classes/SITBuilding.html">SITBuilding</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">building</span>
+                    <span class="nf">withOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                 <span class="nf">withCompletion</span><span class="p">:(</span><span class="n">SITHandler</span> <span class="n">_Nonnull</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span>
+                                    <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SITEvent.html">SITEvent</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                    <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchEvents</span><span class="p">(</span><span class="n">from</span> <span class="nv">building</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITBuilding.html">SITBuilding</a></span><span class="p">,</span> <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">withCompletion</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt"><a href="../Classes/SITEvent.html">SITEvent</a></span><span class="p">]?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">SITHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>building</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SITBuilding object</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>additional parameters to customize the internal operation of the method</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SITHandler</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>This method gives the user a flag that indicates if the operation has been performed or not.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchEventsFromBuilding:withCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchEventsFromBuilding:withCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchEventsFromBuilding:withCompletion:">-fetchEventsFromBuilding:<wbr>withCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the events of a SITBuilding</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Valid options for this method are: SITForceRequestKey. The value of this key is a NSNumber with a bool value on it. The value of YES means that the request will be directed to the network system directly without checking the cache system. The value of NO means the request will be directed to the cache system and if not found it will be redirected to the network system.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">fetchEventsFromBuilding</span><span class="p">:(</span><span class="n"><a href="../Classes/SITBuilding.html">SITBuilding</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">building</span>
+                 <span class="nf">withCompletion</span><span class="p">:(</span><span class="n">SITHandler</span> <span class="n">_Nonnull</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span>
+                                    <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/SITEvent.html">SITEvent</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                    <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchEvents</span><span class="p">(</span><span class="n">from</span> <span class="nv">building</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITBuilding.html">SITBuilding</a></span><span class="p">,</span> <span class="n">withCompletion</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt"><a href="../Classes/SITEvent.html">SITEvent</a></span><span class="p">]?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">SITHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>building</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SITBuilding object</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SITHandler</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>This method gives the user a flag that indicates if the operation has been performed or not.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchGeofencesFromBuilding:withOptions:withCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchGeofencesFromBuilding:withOptions:withCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchGeofencesFromBuilding:withOptions:withCompletion:">-fetchGeofencesFromBuilding:<wbr>withOptions:<wbr>withCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the geofences of a SITBuilding</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span>
+    <span class="nf">fetchGeofencesFromBuilding</span><span class="p">:(</span><span class="n"><a href="../Classes/SITBuilding.html">SITBuilding</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">building</span>
+                   <span class="nf">withOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                <span class="nf">withCompletion</span><span class="p">:(</span><span class="n">SITHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchGeofences</span><span class="p">(</span><span class="n">from</span> <span class="nv">building</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITBuilding.html">SITBuilding</a></span><span class="p">,</span> <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">withCompletion</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>building</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Building from which we want to retrieve the geofences</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional parameters to customize the internal operation of the method</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SITHandler</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Valid options for this method are: SITForceRequestKey. The value of this key is a NSNumber with a bool value on it. The value of YES means that the request will be directed to the network system directly without
+checking the cache system. The value of NO means the request will be directed to the cache system and if not found it will be redirected to the network system.
+
+</div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>This method gives the user a flag that indicates if the operation has been performed or not.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchRemoteConfigWithOptions:success:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchRemoteConfigWithOptions:success:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchRemoteConfigWithOptions:success:failure:">-fetchRemoteConfigWithOptions:<wbr>success:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the <code><a href="../Classes/SITRemoteConfig.html">SITRemoteConfig</a></code> of the current uset with the parameters stored on the dashbooard.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Valid options for this method are: SITForceRequestKey. The value of this key is a NSNumber with a bool value on it. The value of YES means that the request will be directed to the network system directly without
+
+</div><ul>
+<li>checking the cache system. The value of NO means the request will be directed to the cache system and if not found it will be redirected to the network system.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span>
+    <span class="nf">fetchRemoteConfigWithOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                         <span class="nf">success</span><span class="p">:(</span><span class="n">SITSuccessHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">success</span>
+                         <span class="nf">failure</span><span class="p">:(</span><span class="n">SITFailureCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchRemoteConfig</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITSuccessHandler</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITFailureCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional parameters to customize the internal operation of the method</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation has successfully been performed. Information can be accessed through the &ldquo;results&rdquo; key on the mapping result dictionary</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>failure the kind of block that will be executed when the operation fails with an error describing what has failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>This method gives the user a flag that indicates if the operation has been performed or not.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchRemoteConfigWithRequest:options:success:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchRemoteConfigWithRequest:options:success:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchRemoteConfigWithRequest:options:success:failure:">-fetchRemoteConfigWithRequest:<wbr>options:<wbr>success:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the <code><a href="../Classes/SITRemoteConfig.html">SITRemoteConfig</a></code> of the current uset with the parameters stored on the dashbooard. In addition this method overrides the assigned values of the locationRequest.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Valid options for this method are: SITForceRequestKey. The value of this key is a NSNumber with a bool value on it. The value of YES means that the request will be directed to the network system directly without
+
+</div><ul>
+<li>checking the cache system. The value of NO means the request will be directed to the cache system and if not found it will be redirected to the network system.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span>
+    <span class="nf">fetchRemoteConfigWithRequest</span><span class="p">:(</span><span class="n"><a href="../Classes/SITLocationRequest.html">SITLocationRequest</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">locationRequest</span>
+                         <span class="nf">options</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                         <span class="nf">success</span><span class="p">:(</span><span class="n">SITSuccessHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">success</span>
+                         <span class="nf">failure</span><span class="p">:(</span><span class="n">SITFailureCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchRemoteConfig</span><span class="p">(</span><span class="n">with</span> <span class="nv">locationRequest</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITLocationRequest.html">SITLocationRequest</a></span><span class="p">?,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITSuccessHandler</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITFailureCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional parameters to customize the internal operation of the method</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the kind of block that will be executed when the operation has successfully been performed. Information can be accessed through the &ldquo;results&rdquo; key on the mapping result dictionary</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>failure the kind of block that will be executed when the operation fails with an error describing what has failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>This method gives the user a flag that indicates if the operation has been performed or not.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)createOccurrenceForEvent:withSuccess:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-createOccurrenceForEvent:withSuccess:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)createOccurrenceForEvent:withSuccess:failure:">-createOccurrenceForEvent:<wbr>withSuccess:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies an event occurrence</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">createOccurrenceForEvent</span><span class="p">:(</span><span class="n"><a href="../Classes/SITEvent.html">SITEvent</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">event</span>
+                     <span class="nf">withSuccess</span><span class="p">:</span>
+                         <span class="p">(</span><span class="n">SITOccurrenceCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">successCompletion</span>
+                         <span class="nf">failure</span><span class="p">:(</span><span class="n">SITErrorCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">errorCompletion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createOccurrence</span><span class="p">(</span><span class="k">for</span> <span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITEvent.html">SITEvent</a></span><span class="p">,</span> <span class="n">withSuccess</span> <span class="nv">successCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITOccurrenceCompletion</span><span class="p">,</span> <span class="n">failure</span> <span class="nv">errorCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITErrorCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>event</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The event that occurred</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>successCompletion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>completion block that will be executed if the operation is performed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorCompletion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>completion block that will be executed if the operation fails</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BOOL Returns a flag that indicates if the operation has been performed or not.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)updateOccurrence:forEvent:withSuccess:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-updateOccurrence:forEvent:withSuccess:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)updateOccurrence:forEvent:withSuccess:failure:">-updateOccurrence:<wbr>forEvent:<wbr>withSuccess:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies an event occurrence</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">updateOccurrence</span><span class="p">:(</span><span class="n"><a href="../Classes/SITOccurrence.html">SITOccurrence</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">occurrence</span>
+                <span class="nf">forEvent</span><span class="p">:(</span><span class="n"><a href="../Enums/kSITOccurrenceAction.html">kSITOccurrenceAction</a></span><span class="p">)</span><span class="nv">action</span>
+             <span class="nf">withSuccess</span><span class="p">:(</span><span class="n">SITOccurrenceCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">successCompletion</span>
+                 <span class="nf">failure</span><span class="p">:(</span><span class="n">SITErrorCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">errorCompletion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="n">_</span> <span class="nv">occurrence</span><span class="p">:</span> <span class="kt"><a href="../Classes/SITOccurrence.html">SITOccurrence</a></span><span class="p">,</span> <span class="n">forEvent</span> <span class="nv">action</span><span class="p">:</span> <span class="n"><a href="../Enums/kSITOccurrenceAction.html">kSITOccurrenceAction</a></span><span class="p">,</span> <span class="n">withSuccess</span> <span class="nv">successCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITOccurrenceCompletion</span><span class="p">,</span> <span class="n">failure</span> <span class="nv">errorCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITErrorCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>occurrence</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>event occurrence</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>action performed on the event</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>successCompletion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>completion block that will be executed if the operation is performed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorCompletion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>completion block that will be executed if the operation fails</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BOOL Returns a flag that indicates if the operation has been performed or not.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)loginWithUser:password:withCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-loginWithUser:password:withCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)loginWithUser:password:withCompletion:">-loginWithUser:<wbr>password:<wbr>withCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Authenticate with user and password</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This method needs to be called before performing any other network operation in order to validate the credentials.
+          Otherwise the operations could failed with a 401 error code.
+Before attempting to connect with different credentials remeber to disconnect to the actual session performing a -logoutWithCompletion: operation.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">loginWithUser</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">user</span>
+             <span class="nf">password</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">password</span>
+       <span class="nf">withCompletion</span><span class="p">:(</span><span class="n">SITLoginHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">loginHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="n">withUser</span> <span class="nv">user</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withCompletion</span> <span class="nv">loginHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITLoginHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>email of the user</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>password</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>password of the user</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>loginHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>completion block that will be executed if the operation is performed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>This method gives the user a flag that indicates if the operation has been performed (YES) or not (NO).</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)logoutWithCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-logoutWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)logoutWithCompletion:">-logoutWithCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disconnect and clear previous session credentials</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">logoutWithCompletion</span><span class="p">:(</span><span class="n">SITLogoutHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">logoutHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">logout</span><span class="p">(</span><span class="n">completion</span> <span class="nv">logoutHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITLogoutHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>logoutHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>completion block that will be executed if the operation if performed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>This method gives the user a flag that indicates if the operation has been performed (YES) or not (NO).</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SITCommunicationManager(im)fetchOrganizationThemeWithOptions:success:failure:"></a>
+                    <a name="//apple_ref/objc/Method/-fetchOrganizationThemeWithOptions:success:failure:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SITCommunicationManager(im)fetchOrganizationThemeWithOptions:success:failure:">-fetchOrganizationThemeWithOptions:<wbr>success:<wbr>failure:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve information about the organization to adapt the look and feel of your app based on your brand.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">fetchOrganizationThemeWithOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">options</span>
+                                  <span class="nf">success</span><span class="p">:(</span><span class="n">SITSuccessHandler</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">success</span>
+                                  <span class="nf">failure</span><span class="p">:</span>
+                                      <span class="p">(</span><span class="n">SITFailureCompletion</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchOrganizationTheme</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITSuccessHandler</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SITFailureCompletion</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Upon success you can use a  <a href="x-source-tag://SITOrganizationTheme">SITOrganizationTheme</a>  object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="https://situm.com" target="_blank" rel="external noopener">Situm Technologies S.L.</a>. All rights reserved. (Last updated: 2024-03-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

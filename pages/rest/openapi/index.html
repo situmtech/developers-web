@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Situm Rest API</title>
+    <!-- needed for adaptive design -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700|Raleway:300,400,700"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .sc-hXRMBi.nGwee {
+        display: none;
+      }
+
+      h1.sc-htoDjs,
+      span.sc-jwKygS > a:visited,
+      a.jIdpVJ,
+      div .flfxUM a,
+      div .flfxUM a:visited {
+        color: #2695d3;
+      }
+
+      a.jIdpVJ {
+        border-color: #2695d3;
+      }
+
+      .menu-content .-depth1 > span.sc-gwVKww {
+        text-transform: uppercase;
+        font-family: "Raleway", serif;
+        font-size: 1.3em;
+      }
+      .menu-content .operation-type {
+        font-family: Arial;
+      }
+
+      .gZdDsM.menu-content {
+        border-right: 2px solid #2995d3;
+      }
+
+      img.hZCbNs {
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <redoc spec-url="/documentation/openapi/situm_public_api.yaml"></redoc>
+    <script
+      src="https://cdn.jsdelivr.net/npm/redoc@2.0.0-rc.23/bundles/redoc.standalone.js"
+      async="false"
+    ></script>
+    <script>
+      window.onload = function() {
+        setTimeout(function() {
+          document
+            .querySelector(".sc-tilXH")
+            .setAttribute("download", "situm_public_api.yaml");
+        }, 500);
+      };
+    </script>
+  </body>
+</html>
